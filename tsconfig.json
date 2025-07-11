@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM"],
+		"target": "ES2020",
+		"module": "NodeNext",
+		"verbatimModuleSyntax": true,
+		"strict": true,
+		"declaration": true,
+		"allowJs": true,
+		"outDir": "dist",
+		"declarationMap": true,
+		"checkJs": true,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"noUncheckedIndexedAccess": true,
+		"baseUrl": "./",
+		"rootDir": "./",
+		"types": ["node"]
+	},
+	"include": [
+		"src/**/*.js",
+		"scripts/**/*.js"
+	],
+	"exclude": ["node_modules"]
+}

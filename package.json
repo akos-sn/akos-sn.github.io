@@ -1,0 +1,28 @@
+{
+  "name": "bligblog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && wds --watch",
+    "build": "node scripts/build.run",
+    "test": "npm run typecheck && npm run lint",
+    "typecheck": "tsc",
+    "lint": "eslint",
+    "pages": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+	"dependencies": {
+		"@types/markdown-it": "^14.1.2",
+		"markdown-it": "^14.1.0"
+	},
+  "devDependencies": {
+    "@types/node": "^22.16.3",
+    "@web/dev-server": "^0.4.6",
+    "eslint": "^9.30.1",
+    "typescript": "^5.8.3"
+  }
+}
