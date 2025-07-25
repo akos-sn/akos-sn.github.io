@@ -1,9 +1,9 @@
-import { rm, readdir, writeFile, mkdir, readFile } from 'node:fs/promises';
+import { cp, rm, readdir, writeFile, mkdir, readFile } from 'node:fs/promises';
 import { resolve, parse } from 'node:path';
 import createMd from 'markdown-it';
 
 const { convertMdToHtml } = await setupMarkdown({
-	title: 'BligBlog',
+	title: 'akos.sn',
 	htmlTemplatePath: resolve(import.meta.dirname, '../src/page.template.html'),
 });
 
@@ -12,6 +12,11 @@ await build({
 	outputDir: resolve(import.meta.dirname, '../public'),
 	convertMdToHtml,
 });
+await cp(
+	resolve(import.meta.dirname, '../src/styles'),
+	resolve(import.meta.dirname, '../public/styles'),
+	{ force: true, recursive: true }
+);
 
 /**
  * @param {Object} options
