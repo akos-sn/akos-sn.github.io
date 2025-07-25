@@ -8,4 +8,4 @@ This is a **playground** for a lightweight static site.
 
 With some [Links][Urls.OTHER_SITE] to other places.
 
-[Urls.OTHER_SITE]: https://foo.com/bar
+[Urls.OTHER_SITE]: content/examples/some-code.md
