@@ -14,7 +14,7 @@ await build({
 });
 await cp(
 	resolve(import.meta.dirname, '../src'),
-	resolve(import.meta.dirname, '../public'),
+	resolve(import.meta.dirname, '../public/assets'),
 	{ force: true, recursive: true }
 );
 
