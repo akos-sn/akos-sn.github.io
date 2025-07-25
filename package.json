@@ -4,8 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npm run build && wds --watch",
+    "start": "node scripts/start.run",
+    "start:server": "wds --watch",
     "build": "node scripts/build.run",
+    "build:watch": "node scripts/build.watch",
     "test": "npm run typecheck && npm run lint",
     "typecheck": "tsc",
     "lint": "eslint",

@@ -4,7 +4,7 @@ import createMd from 'markdown-it';
 
 const { convertMdToHtml } = await setupMarkdown({
 	title: 'akos.sn',
-	htmlTemplatePath: resolve(import.meta.dirname, '../src/page.template.html'),
+	htmlTemplatePath: resolve(import.meta.dirname, '../page.template.html'),
 });
 
 await build({
@@ -13,8 +13,8 @@ await build({
 	convertMdToHtml,
 });
 await cp(
-	resolve(import.meta.dirname, '../src/styles'),
-	resolve(import.meta.dirname, '../public/styles'),
+	resolve(import.meta.dirname, '../src'),
+	resolve(import.meta.dirname, '../public'),
 	{ force: true, recursive: true }
 );
 
