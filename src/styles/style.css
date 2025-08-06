@@ -3,16 +3,20 @@
 :root {
     color-scheme: light;
     --fg-default: #131313;
+    --fg-subtle: #474843;
     --bg-default: #F6F5F2;
     --bg-subtle: #F0EBE3;
+    --border-subtle: #474843;
     --bg-gradient: #D2FF72;
   }
 
   [data-theme="dark"] {
     color-scheme: dark;
     --fg-default: #F6F5F2;
+	--fg-subtle: #B8B8B8;
     --bg-default: #222831;
     --bg-subtle: #31363F;
+    --border-subtle: #B8B8B8;
     --bg-gradient: #2F576E;
   }
 
@@ -172,6 +176,30 @@ footer > h2 {
 footer svg {
     fill: var(--fg-default);
 }
+
+table {
+	width: 100%;
+	margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    max-width: 600px;
+    border-collapse: collapse;
+    border-spacing: 0;
+	border-top: 1px solid var(--border-subtle);
+}
+th {
+	color: var(--fg-subtle);
+	font-weight: 300;
+}
+
+th,
+td {
+	padding: 1em 1em 1em 0;
+	text-align: start;
+}
+tr {
+    border-bottom: 1px solid var(--border-subtle);
+}
+
 
 @media screen and (max-width: 600px) {
 	main,
