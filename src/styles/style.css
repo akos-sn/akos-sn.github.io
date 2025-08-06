@@ -100,6 +100,7 @@ nav button {
     color: var(--fg-default);
 	font-weight: 200;
 	font-family: "Google Sans Code", monospace;
+	cursor: pointer;
 }
 
 code {
