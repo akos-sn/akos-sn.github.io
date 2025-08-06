@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+		"serve": "live-server public --no-live-reload",
     "start": "node scripts/start.run",
     "start:server": "wds --watch",
     "build": "node scripts/build.run",
