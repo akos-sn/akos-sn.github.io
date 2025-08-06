@@ -343,8 +343,8 @@ footer svg {
                 <div class="about-description">
                     <h3>Core Skills</h3>
 										<p>My skillset enables me to think strategically in cross-functional contexts.</p>
-                    <p><strong>UX Leadership & Mentorship:</strong> Organisational health, team growth, career coaching..</p>
-                    <p><strong>UX Strategy & Operations:</strong> DesignOps, UX Maturity Programs, Design Systems Advocacy..</p>
+                    <p><strong>UX Leadership & Mentorship:</strong> Organisational health, team growth, career coaching.</p>
+                    <p><strong>UX Strategy & Operations:</strong> DesignOps, UX Maturity Programs, Design Systems Advocacy.</p>
                     <p><strong>Product Design:</strong> 10+ years in product design; 7+ years in B2B SaaS (UI/UX, accessibility, inclusive design).</p>
                     <p><strong>Research & Experience Design:</strong> UX Research, Empathic Design, Service Design, UX Copywriting.</p>
                     <p><strong>Prototyping & Engineering Fluency:</strong> From concept sketches to high-fidelity prototypes; coding familiarity (React, Vue3).</p>
