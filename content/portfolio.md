@@ -262,7 +262,7 @@ footer svg {
     }
     .work-grid {
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr; 
         grid-gap: 24px;
     }
     .work-card {
@@ -327,56 +327,27 @@ footer svg {
                 <h2>
                     About me
                 </h2>
-                <div class="about-grid">
-                    <div>
-                        <p class="about-highlight">
-                            I make design decisions by listening to customer pain-points and tracking product measurements.
-                            Innovation comes from need and usability.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="about-description">
-                            10+ years of experience working in Design including 6+ years of UI/UX in the B2B SaaS industry
-                        </p>
-                    <p class="about-description">
-                        As a UX Designer, I’m passionate about driving UX maturity and empowering designers to reach their full potential. I aim to bridge the gap between design and engineering, fostering collaboration that transforms ideas into innovative, user-centered solutions.
-                    </p>
-                    <p class="about-description">
-                        I’m a firm believer of the importance of a holistic product mindset, especially when crafting visions that inspire teams and guide products toward meaningful impact. For me, great design isn’t just effective — it’s also inclusive, ensuring usable and delightful experiences for everyone.
-                    </p>
-                    </div>
-                </div>
             <div class="work-grid">
                 <div class="about-description">
-                    <h3>UX skills</h3>
+                    <h3>Highlighted efforts</h3>
+										<p>My mission is to nurture a healthy organisation with a high level of maturity.</p>
                     <ul>
-                        <li>Product design</li>
-                        <li>Research and Usability testing</li>
-                        <li>UX Copywriting</li>
-                        <li>Designing for accessibility and inclusivity</li>
-                        <li>Design System</li>
-                        <li>Developing UX Maturity</li>
+                        <li>Shared language between Engineers and Designers via the Design System</li>
+												<li>Creating a long-term vision for the future of both the Design System as a product and the Navigation team</li>
+												<li>Facilitated workshops and Design Sprints</li>
+												<li>Worked on the Growth Path for UX practitioners</li>
+												<li>Created a framework to measure and amplify UX efforts</li>
+												<li>Created a Definition of Done document and Figma widget for designers</li>
                     </ul>
                 </div>
                 <div class="about-description">
-                    <h3>Engineering skills</h3>
-                    <ul>
-                        <li>HTML, CSS, Javascript</li>
-                        <li>Web accessibility</li>
-                        <li>Building coded design prototypes using Vue3</li>
-                        <li>Experience building React apps</li>
-                    </ul>
-                </div>
-                <div class="about-description">
-                    <h3>Other skills</h3>
-                    <ul>
-                        <li>Conducting Design Sprints to drive innovation</li>
-                        <li>Writing documentation</li>
-                        <li>Leadership and mentoring</li>
-                        <li>Product discovery</li>
-                        <li>Fluent English & Beginner Dutch</li>
-                        <li>Working in an international team</li>
-                    </ul>
+                    <h3>Core Skills</h3>
+										<p>My skillset enables me to think strategically in cross-functional contexts.</p>
+                    <p><strong>UX Leadership & Mentorship:</strong> Organisational health, team growth, career coaching..</p>
+                    <p><strong>UX Strategy & Operations:</strong> DesignOps, UX Maturity Programs, Design Systems Advocacy..</p>
+                    <p><strong>Product Design:</strong> 10+ years in product design; 7+ years in B2B SaaS (UI/UX, accessibility, inclusive design).</p>
+                    <p><strong>Research & Experience Design:</strong> UX Research, Empathic Design, Service Design, UX Copywriting.</p>
+                    <p><strong>Prototyping & Engineering Fluency:</strong> From concept sketches to high-fidelity prototypes; coding familiarity (React, Vue3).</p>
                 </div>
             </div>
         </section>
