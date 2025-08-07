@@ -24,6 +24,11 @@ ul li {
     padding: 6px 0;
     list-style-type: square;
 }
+.effort-list li {
+    font-size: clamp(18px, 16px + 0.3vw, 24px);
+    line-height: 1.4;
+    text-wrap: pretty;
+}
 .photo {
     background-image: url('./src/img/akos-cropped.jpg');
     background-size: cover;
@@ -122,15 +127,51 @@ h2 {
 .work-grid > a {
     text-decoration: none;
 }
+.project-grid {
+  display: flex; 
+  flex-direction: column;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.project-title > sup {
+  font-family: "Google Sans Code", monospace;
+}
+.project-tile img {
+  border-radius: 8px;
+  aspect-ratio: 16 / 10;
+}
+.project-tile a, .project-tile h3 {
+  margin: 0;
+}
+.project-tile p {
+  margin: 0;
+}
+.project-metric {
+  font-family: "Google Sans Code", monospace;
+}
+.result-header {
+  font-weight:600;
+  font-size: 1rem;
+}
+.result {
+  font-size: 1rem;
+}
 /* .carousel */
 img.reload {
     padding: 0.25em;
     display: block-inline;
     top: 6px;
     height: 0.9em;
-  }
-  .project-grid {
-    margin: 160px 0;
   }
   .project-tags{
     font-weight: 500;
@@ -146,6 +187,7 @@ img.reload {
   }
   .carousel-image > img {
     width: 100%;
+    border-radius: 0px;
     /* aspect-ratio: 16 / 10; */
   }
   .controls {
@@ -270,10 +312,8 @@ footer svg {
     }
     .project-grid {
         display: grid; 
-        grid-template-columns: 1fr 2fr; 
-        grid-template-rows: 1fr; 
-        grid-column-gap: 24px;
-        grid-row-gap: 0px; 
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 48px;
     }
     .carousel .carousel-items {
         padding: 64px;
@@ -282,6 +322,11 @@ footer svg {
       }
     section {
         padding: 0 40px;
+    }
+    .project-title {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
 }
 </style>
@@ -294,12 +339,6 @@ footer svg {
         <hr>
         <section id="core-values">
             <h2>Core Values</h2>
-            <!--             <h3>1. Inclusivity</h3>
-            <p>A design usable by anyone is a good product experience.</p>
-            <h3>2. Simplicity</h3>
-            <p>Elegant, minimalist design approaches complex challenges with thoughtful, seemingly effortless solutions.</p>
-            <h3>3. Empathy</h3>
-            <p>Listening to human pain-points and addressing them during design proposals.</p> -->
             <div class="work-grid">
                 <div class="work-card">
                     <h3>1. Inclusivity</h3>
@@ -321,6 +360,7 @@ footer svg {
                     <h3>5. Curiousity</h3>
                     <p>Continuous learning, experimentation drives innovation and growth.</p>
                 </div>
+              </div>
         </section>
         <hr>
         <section id="about">
@@ -331,7 +371,7 @@ footer svg {
                 <div class="about-description">
                     <h3>Highlighted efforts</h3>
 										<p>My mission is to nurture a healthy organisation with a high level of maturity.</p>
-                    <ul>
+                    <ul class="effort-list">
                         <li>Shared language between Engineers and Designers via the Design System</li>
 												<li>Creating a long-term vision for the future of both the Design System as a product and the Navigation team</li>
 												<li>Facilitated workshops and Design Sprints</li>
@@ -352,233 +392,91 @@ footer svg {
             </div>
         </section>
         <hr>
-        <section id="work">
-            <h2>
-                Previous work
-            </h2>
-            <div class="work-grid">
-                <div class="work-card">
-                    <h3>TOPdesk</h3>
-                    <h4>Product & Design System</h4>
-                    <p>IT Service Management</p>
-                    <p>From 2023</p>
-                </div>
-                <div class="work-card">
-                    <h3>Lufthansa Techik (ex-AERQ)</h3>
-                    <h4>Product Designer</h4>
-                    <p>Aviation</p>
-                    <p>External team member 2023</p>
-                </div>
-                <div class="work-card">
-                    <h3>Melkweg</h3>
-                    <h4>Senior Product Designer and Consultant</h4>
-                    <p>Digital Agency</p>
-                    <p>2023</p>
-                </div>
-                <div class="work-card">
-                    <h3>Neticle & Zurvey.io</h3>
-                    <h4>Senior Product Designer</h4>
-                    <p>Media Analysis Startup & Survey and Customer Experience</p>
-                    <p>2018 – 2022</p>
-                </div>
-                <div class="work-card">
-                    <h3>Plus Kreativ</h3>
-                    <h4>Designer and Front-end Developer</h4>
-                    <p>Digital Agency</p>
-                    <p>2017</p>
-                </div>
-                <div class="work-card">
-                    <h3>Frank Digital</h3>
-                    <h4>Key Visual Artist / Junior Art Director</h4>
-                    <p>Digital Agency</p>
-                    <p>2017</p>
-                </div>
-                <div class="work-card">
-                    <h3>Oktafone</h3>
-                    <h4>Junior UI Designer and Front-end Developer</h4>
-                    <p>Digital Agency</p>
-                    <p>2016 – 2017</p>
-                </div>
-                <div class="work-card">
-                    <h3>Crocobee</h3>
-                    <h4>Graphic Designer and Front-end Developer</h4>
-                    <p>Digital Agency</p>
-                    <p>2015 – 2016</p>
-                </div>
-                <div class="work-card">
-                    <h3>ZUG</h3>
-                    <h4>Co-founder, Front-end Engineering, Art Direction</h4>
-                    <p>Freelancing Designer Community</p>
-                    <p>2017 – 2022</p>
-                </div>
-        </section>
-        <hr>
         <section id="projects">
                 <h2>Projects</h2>
-                <div id="project-motie" class="project-grid">
-                    <div>
-                        <h3>motie.</h3>
-                        <p class="project-tags">UX + Frontend</p>
-                        <p>Motie is a practice micro-app project of mine.</p>
-                        <p>The aim for this project is twofold. One is for me to have a project I can practice my ReactJS chops on, the other is to practice designing for a truly Human problem.</p>
-                        <p>The primary problem I try to face is the problem of overstimulation during planning. By creating restrictions, we're forced to make do with our toolkit. Without productivity features in every nook and cranny, we never waste time to select the proper tools. We only need a sticky note.</p>
-                    </div>
-                    <section id="myCarousel" class="carousel" aria-roledescription="carousel" aria-label="Highlighted television shows">
-                        <div class="carousel-inner">
-                          <div id="myCarousel-items" class="carousel-items" aria-live="off">
-                            <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 6">
-                              <div class="carousel-image">
-                                  <img src="/assets/img/motie-1.jpg" alt="">
-                              </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/motie-2.jpg" alt="">
-                            </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/motie-3.jpg" alt="">
-                            </div>
-                            </div>
-                          </div>
-                        </div>
-                          <div class="controls">
-                            <p><span class="carousel-current"></span>/<span class="carousel-max"></span></p>
-                            <div>
-                            <button type="button" class="previous carousel-arrow" aria-controls="myCarousel-items" aria-label="Previous Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m12.718 4.707-1.413-1.415L2.585 12l8.72 8.707 1.413-1.415L6.417 13H20v-2H6.416l6.302-6.293z"/></svg>
-                            </button>
-                            <button type="button" class="next carousel-arrow" aria-controls="myCarousel-items" aria-label="Next Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
-                            </button>
-                            </div>
-                          </div>
-                </div>
-                <div id="zurvey" class="project-grid">
-                    <div>
-                        <h3>zurvey.io</h3>
-                        <p class="project-tags">UX</p>
-                        <p>A survey and CX toolkit product of Neticle.</p>
-                        <p>Zurvey is a text-analytics supported survey tool. The problem it's aiming to solve is the time-consuming processing of open-ended responses by analysing the texts with keyword-based sentiment analysis.</p>
-                        <p>While working on this platform, we started to think of Zurvey as a CX solution rather than a simple survey creator.</p>
-                        <p>Other than creating surveys, the Users can upload spreadsheets, connect API inputs or set up Email forwarding as Customer Support use-cases.</p>
-                    </div>
-                    <section id="myCarousel" class="carousel" aria-roledescription="carousel" aria-label="Highlighted television shows">
-                        <div class="carousel-inner">
-                          <div id="myCarousel-items" class="carousel-items" aria-live="off">
-                            <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 6">
-                              <div class="carousel-image">
-                                  <img src="/assets/img/zurvey-1.png" alt="">
-                              </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/zurvey-2.png" alt="">
-                            </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/zurvey-3.png" alt="">
-                            </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 6">
-                                <div class="carousel-image">
-                                  <img src="/assets/img/zurvey-4.png" alt="">
-                              </div>
-                              </div>
-                          </div>
-                        </div>
-                          <div class="controls">
-                            <p><span class="carousel-current"></span>/<span class="carousel-max"></span></p>
-                            <div>
-                            <button type="button" class="previous carousel-arrow" aria-controls="myCarousel-items" aria-label="Previous Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m12.718 4.707-1.413-1.415L2.585 12l8.72 8.707 1.413-1.415L6.417 13H20v-2H6.416l6.302-6.293z"/></svg>
-                            </button>
-                            <button type="button" class="next carousel-arrow" aria-controls="myCarousel-items" aria-label="Next Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
-                            </button>
-                            </div>
-                          </div>
-                </div>
-                <div id="nmi" class="project-grid">
-                    <div>
-                        <h3>Neticle Media Intelligence</h3>
-                        <p class="project-tags">UX</p>
-                        <p>Neticle Media Intelligence is the flagship product of Neticle. NMI is a Machine Learning-driven media-monitoring platform turning textual data into measurable information based on keywords and semantic phrases.</p>
-                    </div>
-                    <section id="myCarousel" class="carousel" aria-roledescription="carousel" aria-label="Highlighted television shows">
-                        <div class="carousel-inner">
-                          <div id="myCarousel-items" class="carousel-items" aria-live="off">
-                            <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 6">
-                              <div class="carousel-image">
-                                  <img src="/assets/img/nmi-1.png" alt="">
-                              </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/nmi-2.png" alt="">
-                            </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/nmi-3.png" alt="">
-                            </div>
-                            </div>
-                          </div>
-                        </div>
-                          <div class="controls">
-                            <p><span class="carousel-current"></span>/<span class="carousel-max"></span></p>
-                            <div>
-                            <button type="button" class="previous carousel-arrow" aria-controls="myCarousel-items" aria-label="Previous Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m12.718 4.707-1.413-1.415L2.585 12l8.72 8.707 1.413-1.415L6.417 13H20v-2H6.416l6.302-6.293z"/></svg>
-                            </button>
-                            <button type="button" class="next carousel-arrow" aria-controls="myCarousel-items" aria-label="Next Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
-                            </button>
-                            </div>
-                          </div>
-                </div>
-                <div id="music" class="project-grid">
-                    <div>
-                        <h3>Sample Instruments</h3>
-                        <p class="project-tags">UX + Coding + Sound</p>
-                        <p>Creating and designing sample libraries is a passion project of mine. Essentially, these are instruments recorded one note at a time to transform them into a new playable instrument controlled by midi.</p>
-                        <p>Composing these instruments require a lot of attention to detail. With the UI, I try to communicate what mood might these libraries evoke or how inspiration came to me.</p>
-                    </div>
-                    <section id="myCarousel" class="carousel" aria-roledescription="carousel" aria-label="Highlighted television shows">
-                        <div class="carousel-inner">
-                          <div id="myCarousel-items" class="carousel-items" aria-live="off">
-                            <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 6">
-                              <div class="carousel-image">
-                                  <img src="/assets/img/music-1.png" alt="">
-                              </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/music-2.png" alt="">
-                            </div>
-                            </div>
-                            <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 6">
-                              <div class="carousel-image">
-                                <img src="/assets/img/music-3.png" alt="">
-                            </div>
-                            </div>
-                          </div>
-                        </div>
-                          <div class="controls">
-                            <p><span class="carousel-current"></span>/<span class="carousel-max"></span></p>
-                            <div>
-                            <button type="button" class="previous carousel-arrow" aria-controls="myCarousel-items" aria-label="Previous Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m12.718 4.707-1.413-1.415L2.585 12l8.72 8.707 1.413-1.415L6.417 13H20v-2H6.416l6.302-6.293z"/></svg>
-                            </button>
-                            <button type="button" class="next carousel-arrow" aria-controls="myCarousel-items" aria-label="Next Slide">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/></svg>
-                            </button>
-                            </div>
-                          </div>
-                </div>
-                    </section>
-                </div>
+                <div class="project-grid">
+                <div class="project-tile">
+                      <img src="/assets/img/motie-2.jpg">
+                      <div class="project-title">
+                        <a href="/portfolio/project1.html"><h3>Measuring UX</h3></a>
+                        <sup>Ops</sup>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Description</p>
+                        <p class="result">Creating a framework for connecting usability pain points and business goals.</p>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Result</p>
+                        <p class="result">Shared language with PMs, higher engagement in product decisions.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
+                      <img src="/assets/img/motie-2.jpg">
+                      <div class="project-title">
+                        <a href="/portfolio/project1.html"><h3>TOPdesk Design System</h3></a>
+                        <sup>Ops</sup>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Description</p>
+                        <p class="result">Shared language between developers and designers.</p>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Result</p>
+                        <p class="result">Simplified design handoff process.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
+                      <img src="/assets/img/motie-2.jpg">
+                      <div class="project-title">
+                        <a href="/portfolio/project1.html"><h3>TOPdesk Self-Service Portal </h3></a>
+                        <sup>UX</sup>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Description</p>
+                        <p class="result">AI-assisted search to fast-track users to meaningful answers to their questions.</p>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Result</p>
+                        <p class="result">Shorter time on task, less incoming requests.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
+                      <img src="/assets/img/motie-2.jpg">
+                      <div class="project-title">
+                        <a href="/portfolio/project1.html"><h3>zurvey.io</h3></a>
+                        <sup>UX</sup>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Description</p>
+                        <p class="result">Creating a workflow for multilingual survey editing.</p>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Result</p>
+                        <p class="result">Less overhead, more inclusive authoring tool.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
+                      <img src="/assets/img/motie-2.jpg">
+                      <div class="project-title">
+                        <a href="/portfolio/project1.html"><h3>motie.</h3></a>
+                        <sup>UX+Dev</sup>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Description</p>
+                        <p class="result">Modular, distraction-free notetaking.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
+                      <img src="/assets/img/motie-2.jpg">
+                      <div class="project-title">
+                        <a href="/portfolio/project1.html"><h3>Sample Instruments</h3></a>
+                        <sup>UX+Dev</sup>
+                      </div>
+                      <div class="project-metric">
+                        <p class="result-header">Description</p>
+                        <p class="result">Sample based virtual instruments, recorded note-by-note.</p>
+                      </div>
+                  </div>
+              </div>
         </section>
 </html>
