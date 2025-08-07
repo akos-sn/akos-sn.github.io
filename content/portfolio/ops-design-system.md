@@ -8,27 +8,15 @@
 
 <bb-tags>
 
-UX Design — 2021 zurvey.io
+Ops — 2023 TOPdesk
 
 </bb-tags>
 
 <bb-intro>
 
-Creating a workflow for multilingual survey editing.
+Shared language between developers and designers.
 
 </bb-intro>
-
----
-
-<bb-tags>
-
-Context
-
-</bb-tags>
-
-This project was a request from a handful of clients operating in different countries. The language recognition was driven by a Text Analysis API which was developed in-house to obviously analyse written text. 
-
-This feature needed to be seamlessly integrated into the pre-existing Survey Builder, considering that this was a paid-for feature; the flow of information should be intact with or without this feature's availability.
 
 ---
 
@@ -38,7 +26,9 @@ Challenge
 
 </bb-tags>
 
-This feature needed to be accessible from an URL so that translators would get instant access to the translation workflow. The translation workflow needed to be understandable without clicking back-and-forth screens and display all the required information within a single screen.
+When I started out at TOPdesk, I was an in-team designer at the design system. It was already a pretty expansive set of components and guidelines, but it wasn't consistent between the components implemented versus the Figma components.
+
+A problem I wanted to solve is that designers and developers often don't speak the same language, and the component properties did reflect that. 
 
 </div>
 

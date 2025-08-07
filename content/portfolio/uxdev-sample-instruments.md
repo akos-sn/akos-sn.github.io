@@ -1,6 +1,6 @@
 <a href="/portfolio.html">← Back to portfolio</a>
 
-![hero](/assets/img/zurvey-2.png)
+![hero](/assets/img/music-thumbnail.png)
 
 <h1>Project 1</h1>
 
@@ -8,13 +8,13 @@
 
 <bb-tags>
 
-UX Design — 2021 zurvey.io
+UX, Recording and Engineering
 
 </bb-tags>
 
 <bb-intro>
 
-Creating a workflow for multilingual survey editing.
+Sample based virtual instruments, recorded note-by-note.
 
 </bb-intro>
 
@@ -26,24 +26,26 @@ Context
 
 </bb-tags>
 
-This project was a request from a handful of clients operating in different countries. The language recognition was driven by a Text Analysis API which was developed in-house to obviously analyse written text. 
+Creating and designing sample libraries is a passion project of mine. Essentially, these are instruments recorded one note at a time to transform them into a new playable instrument controlled by midi.
 
-This feature needed to be seamlessly integrated into the pre-existing Survey Builder, considering that this was a paid-for feature; the flow of information should be intact with or without this feature's availability.
-
----
-
-<bb-tags>
-
-Challenge
-
-</bb-tags>
-
-This feature needed to be accessible from an URL so that translators would get instant access to the translation workflow. The translation workflow needed to be understandable without clicking back-and-forth screens and display all the required information within a single screen.
+Composing these instruments require a lot of attention to detail. With the UI, I try to communicate what mood might these libraries evoke or how inspiration came to me.
 
 </div>
 
 ## Implementation
 
-This is the challenge
+Implementing a sample library is a slow process requiring a lot of attention to detail. During the recording session the source sound must be recorded note-by-note.
 
-![alt text](/assets/img/zurvey-2.png)
+![LOGIC SESSION SCREENSHOT]()
+
+After the recording session I make a quick rough mockup to see if the instrument works. Some sounds sample better than others, and different instruments might need different treatment. This is not a high-quality sample library but a short proof-of-concept.
+
+![LOGIC SAMPLER SCREENSHOT]()
+
+When I have a decent idea of the layout, I start to create the GUI and the individual component designs. In this case my Korg Minilogue was the instrument I was sampling with some of my patches, so I took the designs from the original hardware synth and applied it to my design.
+
+I use DecentSampler, an XML-based free sampler that is widely accessible for people regardless of OS or Digital Audio Workstation (DAW) of their choice.
+
+![alt text](/assets/img/music-design.png)
+
+![alt text](/assets/img/music-code.png)

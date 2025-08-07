@@ -398,7 +398,7 @@ footer svg {
                 <div class="project-tile">
                       <img src="/assets/img/motie-2.jpg">
                       <div class="project-title">
-                        <a href="/portfolio/project1.html"><h3>Measuring UX</h3></a>
+                        <a href="/portfolio/ops-measuring-ux.html"><h3>Measuring UX</h3></a>
                         <sup>Ops</sup>
                       </div>
                       <div class="project-metric">
@@ -413,7 +413,7 @@ footer svg {
                   <div class="project-tile">
                       <img src="/assets/img/motie-2.jpg">
                       <div class="project-title">
-                        <a href="/portfolio/project1.html"><h3>TOPdesk Design System</h3></a>
+                        <a href="/portfolio/ops-design-system.html"><h3>TOPdesk Design System</h3></a>
                         <sup>Ops</sup>
                       </div>
                       <div class="project-metric">
@@ -428,7 +428,7 @@ footer svg {
                   <div class="project-tile">
                       <img src="/assets/img/motie-2.jpg">
                       <div class="project-title">
-                        <a href="/portfolio/project1.html"><h3>TOPdesk Self-Service Portal </h3></a>
+                        <a href="/portfolio/ux-ssp.html"><h3>TOPdesk Self-Service Portal </h3></a>
                         <sup>UX</sup>
                       </div>
                       <div class="project-metric">
@@ -443,7 +443,7 @@ footer svg {
                   <div class="project-tile">
                       <img src="/assets/img/motie-2.jpg">
                       <div class="project-title">
-                        <a href="/portfolio/project1.html"><h3>zurvey.io</h3></a>
+                        <a href="/portfolio/ux-zurvey.html"><h3>zurvey.io</h3></a>
                         <sup>UX</sup>
                       </div>
                       <div class="project-metric">
@@ -458,7 +458,7 @@ footer svg {
                   <div class="project-tile">
                       <img src="/assets/img/motie-2.jpg">
                       <div class="project-title">
-                        <a href="/portfolio/project1.html"><h3>motie.</h3></a>
+                        <a href="/portfolio/uxdev-motie.html"><h3>motie.</h3></a>
                         <sup>UX+Dev</sup>
                       </div>
                       <div class="project-metric">
@@ -467,9 +467,9 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/motie-2.jpg">
+                      <img src="/assets/img/music-thumbnail.png">
                       <div class="project-title">
-                        <a href="/portfolio/project1.html"><h3>Sample Instruments</h3></a>
+                        <a href="/portfolio/uxdev-sample-instruments.html"><h3>Sample Instruments</h3></a>
                         <sup>UX+Dev</sup>
                       </div>
                       <div class="project-metric">

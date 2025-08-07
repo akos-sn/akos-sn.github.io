@@ -39,7 +39,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	background: var(--bg-default);
 	color: var(--fg-default);
 	margin:0;
