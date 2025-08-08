@@ -174,12 +174,6 @@ bb-intro p {
 	margin: 0;
 }
 
-bb-context {
-	max-width: 600px;
-	padding: 24px 0;
-	text-align: left;
-}
-
 bb-tags p {
 	font-size: 0.9rem;
 	font-family: "google sans code", monospace;
