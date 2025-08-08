@@ -20,6 +20,6 @@
 	"include": [
 		"src/**/*.js",
 		"scripts/**/*.js"
-	],
+, "src/main.js"	],
 	"exclude": ["node_modules"]
 }

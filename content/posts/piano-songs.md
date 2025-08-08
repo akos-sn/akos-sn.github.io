@@ -1,7 +1,7 @@
 ---
 title: Piano songs
 date: 07 August 2025
-tags: Draft
+tags: Music
 ---
 
 # Piano songs

@@ -426,7 +426,7 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/motie-2.jpg">
+                      <img src="/assets/img/ssp-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/ux-ssp.html"><h3>TOPdesk Self-Service Portal </h3></a>
                         <sup>UX</sup>
@@ -441,7 +441,7 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/motie-2.jpg">
+                      <img src="/assets/img/zurvey-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/ux-zurvey.html"><h3>zurvey.io</h3></a>
                         <sup>UX</sup>

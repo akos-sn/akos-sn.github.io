@@ -36,11 +36,9 @@ Composing these instruments require a lot of attention to detail. With the UI, I
 
 Implementing a sample library is a slow process requiring a lot of attention to detail. During the recording session the source sound must be recorded note-by-note.
 
-![LOGIC SESSION SCREENSHOT]()
-
 After the recording session I make a quick rough mockup to see if the instrument works. Some sounds sample better than others, and different instruments might need different treatment. This is not a high-quality sample library but a short proof-of-concept.
 
-![LOGIC SAMPLER SCREENSHOT]()
+![LOGIC SESSION SCREENSHOT](/assets/img/music-logic.png)
 
 When I have a decent idea of the layout, I start to create the GUI and the individual component designs. In this case my Korg Minilogue was the instrument I was sampling with some of my patches, so I took the designs from the original hardware synth and applied it to my design.
 

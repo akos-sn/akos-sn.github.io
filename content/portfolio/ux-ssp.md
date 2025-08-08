@@ -2,19 +2,19 @@
 
 ![hero](/assets/img/zurvey-2.png)
 
-<h1>Project 1</h1>
+<h1>TOPdesk Self-Service Portal</h1>
 
 <div class="introduction">
 
 <bb-tags>
 
-UX Design — 2021 zurvey.io
+UX Design — 2025 TOPdesk
 
 </bb-tags>
 
 <bb-intro>
 
-Creating a workflow for multilingual survey editing.
+AI-assisted search to fast-track users to meaningful answers to their questions.
 
 </bb-intro>
 
@@ -22,28 +22,52 @@ Creating a workflow for multilingual survey editing.
 
 <bb-tags>
 
-Context
+CHALLENGE
 
 </bb-tags>
 
-This project was a request from a handful of clients operating in different countries. The language recognition was driven by a Text Analysis API which was developed in-house to obviously analyse written text. 
+We were taking on a legacy project update filled with technical limitations. With a mono-functional frontend engineering team and another designer we had no impact on the backend.
 
-This feature needed to be seamlessly integrated into the pre-existing Survey Builder, considering that this was a paid-for feature; the flow of information should be intact with or without this feature's availability.
+Our domain’s primary goal is to deflect calls that could be solved with information already existing in the client’s knowledge base.
 
 ---
 
 <bb-tags>
 
-Challenge
+APPROACH
 
 </bb-tags>
 
-This feature needed to be accessible from an URL so that translators would get instant access to the translation workflow. The translation workflow needed to be understandable without clicking back-and-forth screens and display all the required information within a single screen.
+We had the idea to have a design sprint and generate ideas for this project with hard technical limitations.
 
 </div>
 
+## Design Sprint
+
+I took on the organisation and facilitation of the sessions. Our setup was a tad unusual in that we included our engineers in the whole process. 
+
+They were really enthusiastic during the user journey mapping session and because of the feasibility concerns we had scheduled in time for the engineers to conduct feasibility spikes while I was ideating with my peer designer. 
+
+**[Screenshot of ideation]**
+
+Around the end of day two, with our ideas presented, we dissected the proposals and picked one solution that is both high feasibility and high impact.
+
+Our idea included an AI summarisation of available articles and we managed to help the users by extracting keywords from their search query.
+
+### We decided to build it
+
+Our unusual design sprint turned into a hackathon. We already had interviews scheduled for Thursday afternoon with internal consultants, and for Friday afternoon with clients we had contact with from the exploratory interviews.
+
+The engineers started with a simple prototype, while us designers were working on the design handoff specs.
+
+We had a coded prototype by the end of Thursday. 
+
+### A sidebar about data
+
+As designers we picked up the habit of reading REST API response JSONs to figure out if we have access to certain information at any given time.
+
+This constraint remained with us even after the design sprint into a beta period.
+
 ## Implementation
 
-This is the challenge
-
-![alt text](/assets/img/zurvey-2.png)
+[Gallery of UIs]

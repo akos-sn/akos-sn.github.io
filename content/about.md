@@ -10,20 +10,21 @@ ABOUT
 
 <bb-intro>
 
-I always look for creative output.
+I am a designer with over ten years of experience in product design, design operations, ux engineering, mentoring, and art direction.
 
 </bb-intro>
 
 </div>
 
-## Reading
-Title | Genre | Author
--------|-------|-------
-value | value | value
-value | value | value
-value | value | value
-value | value | value
-value | value | value
-value | value | value
-value | value | value
+## Interests
+- list
+- element
+- other
 
+
+## Reading
+
+Title | Author | Genre 
+-------|-------|-------
+The Art of Leadership | Michael Lopp | Business 
+Piranesi | Susanna Clarke | Fiction

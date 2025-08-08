@@ -3,7 +3,7 @@ import { resolve, parse } from 'node:path';
 import createMd from 'markdown-it';
 
 const { convertMdToHtml } = await setupMarkdown({
-	title: 'title',
+	title: 'akos.sn',
 	htmlTemplatePath: resolve(import.meta.dirname, '../page.template.html'),
 });
 
@@ -185,6 +185,9 @@ function parseFrontMatter(content) {
 	if (postsMeta.length > 0) {
 		postsMeta.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+		const originalPostsMd = await readFile('content/posts.md', 'utf-8');
+
+
 		let postsListHtml = '<ul class="posts-list">\n';
 		for (const post of postsMeta) {
 			postsListHtml +=
@@ -200,12 +203,13 @@ function parseFrontMatter(content) {
 		}
 		postsListHtml += '</ul>';
 
-		const listingMarkdown = `${postsListHtml}`;
-		const listingHtml = convertMdToHtml(listingMarkdown);
-
+		const fullPostsMd = `${originalPostsMd.trim()}\n\n${postsListHtml}`;
+		const postsHtml = convertMdToHtml(fullPostsMd);
 		const postsOutputPath = resolve(outputDir, 'posts.html');
-		await writeFile(postsOutputPath, listingHtml, 'utf-8');
+		await writeFile(postsOutputPath, postsHtml, 'utf-8');
+
 		console.log('Generated posts.html');
+
 	}
 }
 

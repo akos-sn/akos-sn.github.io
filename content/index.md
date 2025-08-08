@@ -1,5 +1,7 @@
 <h1 class="sr-only"> Introduction </h1>
 
+<img class="avatar" src="/assets/img/akos-2024.jpg" alt="" />
+
 <div class="introduction">
 
 <bb-tags>
@@ -10,21 +12,12 @@ INTRODUCTION
 
 <bb-intro>
 
+<p style="margin-bottom:0">
 I am Akos Szasz-Nagy, A UX Practitioner and Design Engineer based in the Netherlands with a focus on innovative, inclusive and sustainable solutions.
+</p>
 
 </bb-intro>
 
 </div>
 
-## Core principles
-
-### Principle 1
-This is for the principle 1.
-
-
-
-## It also has a heading 2 but does it still work?
-
-With some [Links][Urls.OTHER_SITE] to other places.
-
-[Urls.OTHER_SITE]: /examples/some-code.html
+I am passionate about healthy practices and enabling designers to do their best work. By removing clutter, we can focus on meaningful conversations and grow together in our industry.
