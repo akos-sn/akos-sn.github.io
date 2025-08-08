@@ -156,6 +156,35 @@ bb-tags p {
 	margin: 12px 0;
 }
 
+.posts-metadata {
+	display: flex;
+	align-items: baseline;
+	gap: 12px;
+	font-family: "google sans code", monospace;
+}
+
+.posts-list {
+	padding: 0;
+	margin: 0;
+}
+
+.posts-list hr:not(:last-of-type) {
+	border-bottom: 1px solid black;
+}
+
+.post-tags {
+}
+
+.posts-list-item {
+	margin-bottom: 32px;
+	list-style-type: none;
+}
+
+.posts-list-item > a {
+	font-size: 28px;
+}
+
+
 
 footer {
     margin: 40px;

@@ -1,7 +1,7 @@
 ---
 title: Some code
-date: 21-07-2025
-tags: draft
+date: 21 July 2025
+tags: Draft
 ---
 
 # Some code
