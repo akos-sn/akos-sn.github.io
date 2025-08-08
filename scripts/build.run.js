@@ -3,7 +3,7 @@ import { resolve, parse } from 'node:path';
 import createMd from 'markdown-it';
 
 const { convertMdToHtml } = await setupMarkdown({
-	title: 'akos.sn',
+	title: 'title',
 	htmlTemplatePath: resolve(import.meta.dirname, '../page.template.html'),
 });
 

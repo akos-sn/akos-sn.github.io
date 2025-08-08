@@ -30,6 +30,6 @@ Description of the article goes here.
 
 </bb-card>
 
-[Urls.OTHER_SITE]: /archive/some-code.html
-[Urls.PIANO_SONGS]: /archive/piano-songs.html
+[Urls.OTHER_SITE]: /posts/some-code.html
+[Urls.PIANO_SONGS]: /posts/piano-songs.html
 
