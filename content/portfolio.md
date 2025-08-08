@@ -143,6 +143,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin: 0 0 48px 0;
 }
 .project-title {
   display: flex;
@@ -155,6 +156,7 @@ h2 {
   font-weight: 500;
 }
 .project-tile img {
+  margin-bottom: 16px;
   border-radius: 8px;
   aspect-ratio: 16 / 10;
 }
@@ -176,117 +178,6 @@ h2 {
 .result {
   font-size: 1rem;
 }
-/* .carousel */
-img.reload {
-    padding: 0.25em;
-    display: block-inline;
-    top: 6px;
-    height: 0.9em;
-  }
-  .project-tags{
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  .carousel {
-    width: 100%;
-    max-width: 900px;
-    padding: 0;
-  }
-  .carousel .carousel-items {
-    padding: 0;
-  }
-  .carousel-image > img {
-    width: 100%;
-    border-radius: 0px;
-    /* aspect-ratio: 16 / 10; */
-  }
-  .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .controls > p {
-    font-size: 1.2em;
-  }
-  .carousel-arrow {
-    font-size: 1.5em;
-    cursor: pointer;
-    border: none;
-    background: none;
-    min-height: 44px;
-    min-width: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .carousel-arrow > svg {
-    fill: var(--fg-default);
-  }
-  .carousel .carousel-items.focus {
-    padding: 2px;
-    border: solid 3px #005a9c;
-  }
-  .carousel .carousel-item {
-    display: none;
-    /* max-height: 400px; */
-    max-width: 900px;
-    overflow: hidden;
-    width: 100%;
-  }
-  .carousel .carousel-item.active {
-    display: block;
-  }
-  .carousel-arrow:hover {
-    background-color: var(--bg-subtle);
-  }
-  /* More accessible carousel styles, with caption and controls above/below image */
-  .carousel-moreaccessible {
-    padding: 0;
-    margin: 0;
-    border: #eee solid 4px;
-    border-radius: 5px;
-  }
-  /* Shared CSS for Pause and Tab Controls */
-  .carousel-moreaccessible .controls {
-    top: 0;
-    left: 0;
-    padding: 0.25em 0.25em 0;
-  }
-  .carousel.carousel-moreaccessible .controls {
-    position: static;
-    height: 36px;
-  }
-  .controls > button {
-    min-height: 44px;
-  }
-  .carousel.carousel-moreaccessible .controls button.previous {
-    right: 60px;
-  }
-  .carousel.carousel-moreaccessible .controls button.next {
-    right: 6px;
-  }
-  .carousel-moreaccessible .carousel-items,
-  .carousel-moreaccessible .carousel-items.focus {
-    padding: 0;
-    border: none;
-  }
-  .carousel-moreaccessible .carousel-items.focus .carousel-image a {
-    padding: 2px;
-    border: 3px solid #005a9c;
-  }
-  /* More accessible caption styling */
-  .carousel-moreaccessible .carousel-item {
-    padding: 0;
-    margin: 0;
-    max-height: none;
-  }
-  .carousel-moreaccessible .carousel-item .carousel-caption {
-    position: static;
-    padding: 0;
-    margin: 0;
-    height: 60px;
-    color: black;
-  }
 footer svg {
     fill: var(--fg-default);
 }
