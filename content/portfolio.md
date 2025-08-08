@@ -66,6 +66,12 @@ ul li {
     flex-direction: column;
     margin: 64px auto;
 }
+#core-values > h2,
+#about > h2,
+#projects > h2 {
+    margin-bottom: 32px;
+    text-align: center;
+}
 #core-values > h3 {
     margin: 4px;
 }
@@ -86,7 +92,7 @@ hr {
 }
 h2 {
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 400;
 }
 #about {
     margin-bottom: 40px;
@@ -145,6 +151,8 @@ h2 {
 }
 .project-title > sup {
   font-family: "Google Sans Code", monospace;
+  line-height: 2.4rem;
+  font-weight: 500;
 }
 .project-tile img {
   border-radius: 8px;
