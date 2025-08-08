@@ -15,3 +15,5 @@ Sometimes I write articles on UX, org health, processes, and miscellanious topic
 </bb-intro>
 
 </div>
+
+---
