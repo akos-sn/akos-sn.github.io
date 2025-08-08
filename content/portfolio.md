@@ -136,7 +136,7 @@ h2 {
 .project-tile {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 .project-title {
   display: flex;
@@ -152,6 +152,8 @@ h2 {
 }
 .project-tile a, .project-tile h3 {
   margin: 0;
+  font-size: 1.7rem;
+  font-weight: 300;
 }
 .project-tile p {
   margin: 0;
@@ -402,7 +404,6 @@ footer svg {
                         <sup>Ops</sup>
                       </div>
                       <div class="project-metric">
-                        <p class="result-header">Description</p>
                         <p class="result">Creating a framework for connecting usability pain points and business goals.</p>
                       </div>
                       <div class="project-metric">
@@ -417,7 +418,6 @@ footer svg {
                         <sup>Ops</sup>
                       </div>
                       <div class="project-metric">
-                        <p class="result-header">Description</p>
                         <p class="result">Shared language between developers and designers.</p>
                       </div>
                       <div class="project-metric">
@@ -432,7 +432,6 @@ footer svg {
                         <sup>UX</sup>
                       </div>
                       <div class="project-metric">
-                        <p class="result-header">Description</p>
                         <p class="result">AI-assisted search to fast-track users to meaningful answers to their questions.</p>
                       </div>
                       <div class="project-metric">
@@ -447,7 +446,6 @@ footer svg {
                         <sup>UX</sup>
                       </div>
                       <div class="project-metric">
-                        <p class="result-header">Description</p>
                         <p class="result">Creating a workflow for multilingual survey editing.</p>
                       </div>
                       <div class="project-metric">
@@ -462,7 +460,6 @@ footer svg {
                         <sup>UX+Dev</sup>
                       </div>
                       <div class="project-metric">
-                        <p class="result-header">Description</p>
                         <p class="result">Modular, distraction-free notetaking.</p>
                       </div>
                   </div>
@@ -473,7 +470,6 @@ footer svg {
                         <sup>UX+Dev</sup>
                       </div>
                       <div class="project-metric">
-                        <p class="result-header">Description</p>
                         <p class="result">Sample based virtual instruments, recorded note-by-note.</p>
                       </div>
                   </div>

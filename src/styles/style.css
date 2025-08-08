@@ -57,14 +57,20 @@ hr {
 	margin: 24px 0;
 }
 
+h1 {
+	font-size: clamp(1.5rem, 0.9rem + 3vw, 3rem);
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
 p {
-	font-size: clamp(18px, 16px + 0.3vw, 24px);
+	font-size: clamp(1rem, 16px + 2.4vw, 1.3rem);
 	line-height: 1.4;
 	text-wrap: pretty;
 }
 
 li {
-	font-size: clamp(18px, 16px + 0.3vw, 24px);
+	font-size: clamp(1rem, 16px + 2.4vw, 1.3rem);
 	line-height: 1.4;
 	text-wrap: pretty;
 }
@@ -166,7 +172,12 @@ bb-intro p {
 	width: 100%;
 	text-align: start;
 	margin: 0;
-	margin-bottom: 48px;
+}
+
+bb-context {
+	max-width: 600px;
+	padding: 24px 0;
+	text-align: left;
 }
 
 bb-tags p {
@@ -182,6 +193,7 @@ bb-tags p {
 	align-items: baseline;
 	gap: 12px;
 	font-family: "google sans code", monospace;
+	font-size: 1rem;
 }
 
 .posts-list {
@@ -201,8 +213,6 @@ bb-tags p {
 .posts-list-item > a {
 	font-size: 28px;
 }
-
-
 
 footer {
     margin: 40px;

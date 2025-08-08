@@ -12,7 +12,7 @@ INTRODUCTION
 
 <bb-intro>
 
-<p style="margin-bottom:0">
+<p>
 I am Akos Szasz-Nagy, A UX Practitioner and Design Engineer based in the Netherlands with a focus on innovative, inclusive and sustainable solutions.
 </p>
 

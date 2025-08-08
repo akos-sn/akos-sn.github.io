@@ -2,7 +2,7 @@
 
 ![hero](/assets/img/music-thumbnail.png)
 
-<h1>Project 1</h1>
+<h1>Sampled Instruments</h1>
 
 <div class="introduction">
 
@@ -22,7 +22,7 @@ Sample based virtual instruments, recorded note-by-note.
 
 <bb-tags>
 
-Context
+CONTEXT
 
 </bb-tags>
 
