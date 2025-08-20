@@ -1,13 +1,7 @@
 <html>
 <style>
-nav ul{
-	list-style: none !important;
-	list-style-type: none !important;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	gap:32px;
-	justify-content: flex-end;
+nav > ul li {
+    padding: 0;
 }
 body{
     font-size: clamp(1.125rem, 1rem + 0.4vw, 1.5rem); line-height: 1.6;
