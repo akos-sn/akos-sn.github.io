@@ -19,14 +19,24 @@ I am a designer with over ten years of experience in product design, design oper
 </div>
 
 ## Interests
-- list
-- element
-- other
+- art and architecture
+- music
+- tabletop role-playing
+- science fiction
+- paranormal
+- coffee
+- mindfulness
+- minimalism
+- accessibility
+- learning
 
 
-## Reading
+## Reading (2025)
 
 Title | Author | Genre 
 -------|-------|-------
-The Art of Leadership | Michael Lopp | Business 
+A Dynamic Theory of Personality | Kurt Lewin | Psychology 
+The Creative Act | Rick Rubin | Non-fiction 
+Atomic Habits | James Clear | Non-fiction 
+The Art of Leadership | Michael Lopp | Leadership 
 Piranesi | Susanna Clarke | Fiction
