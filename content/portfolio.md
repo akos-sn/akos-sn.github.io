@@ -153,7 +153,7 @@ h2 {
 .project-tile p {
   margin: 0;
 }
-.project-metric {
+.project-description {
   font-family: "Google Sans Code", monospace;
 }
 .result-header {
@@ -228,10 +228,10 @@ footer svg {
                         <a href="/portfolio/ops-measuring-ux.html"><h3>Measuring UX</h3></a>
                         <sup>Ops</sup>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result">Creating a framework for connecting usability pain points and business goals.</p>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Shared language with PMs, higher engagement in product decisions.</p>
                       </div>
@@ -242,24 +242,38 @@ footer svg {
                         <a href="/portfolio/ops-design-system.html"><h3>TOPdesk Design System</h3></a>
                         <sup>Ops</sup>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result">Shared language between developers and designers.</p>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Simplified design handoff process.</p>
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/ssp-thumbnail.png">
+                      <img src="/assets/img/aerq-thumbnail.png">
+                      <div class="project-title">
+                        <a href="/portfolio/ux-aerq.html"><h3>AERQ</h3></a>
+                        <sup>UX</sup>
+                      </div>
+                      <div class="project-description">
+                        <p class="result">Preventive maintenance of aircrafts' in-flight entertainment systems.</p>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Impact</p>
+                        <p class="result">A smart notification setup process enabling preventive maintenance.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
+                      <img src="/assets/img/ssp-thumbnail2.png">
                       <div class="project-title">
                         <a href="/portfolio/ux-ssp.html"><h3>TOPdesk Self-Service Portal </h3></a>
                         <sup>UX</sup>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result">AI-assisted search to fast-track users to meaningful answers to their questions.</p>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Shorter time on task, less incoming requests.</p>
                       </div>
@@ -270,10 +284,10 @@ footer svg {
                         <a href="/portfolio/ux-zurvey.html"><h3>zurvey.io</h3></a>
                         <sup>UX</sup>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result">Creating a workflow for multilingual survey editing.</p>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Less overhead, more inclusive authoring tool.</p>
                       </div>
@@ -284,18 +298,8 @@ footer svg {
                         <a href="/portfolio/uxdev-motie.html"><h3>motie.</h3></a>
                         <sup>UX+Dev</sup>
                       </div>
-                      <div class="project-metric">
+                      <div class="project-description">
                         <p class="result">Modular, distraction-free notetaking.</p>
-                      </div>
-                  </div>
-                  <div class="project-tile">
-                      <img src="/assets/img/music-thumbnail.png">
-                      <div class="project-title">
-                        <a href="/portfolio/uxdev-sample-instruments.html"><h3>Sample Instruments</h3></a>
-                        <sup>UX+Dev</sup>
-                      </div>
-                      <div class="project-metric">
-                        <p class="result">Sample based virtual instruments, recorded note-by-note.</p>
                       </div>
                   </div>
               </div>

@@ -40,3 +40,8 @@ The Creative Act | Rick Rubin | Non-fiction
 Atomic Habits | James Clear | Non-fiction 
 The Art of Leadership | Michael Lopp | Leadership 
 Piranesi | Susanna Clarke | Fiction
+
+
+## About the website
+
+I was always envious of the utilitarian minimalism of front-end engineers’ websites. The perceivably lightweight performance was something I wanted to achieve. So I wanted to build something really low-tech using markdown files for writing articles — I’ve been taking notes in markdown for years and I love how readable it is. It only made sense.

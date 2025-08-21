@@ -1,6 +1,6 @@
 <a href="/portfolio.html">← Back to portfolio</a>
 
-![hero](/assets/img/zurvey-2.png)
+![hero](/assets/img/ssp-thumbnail2.png)
 
 <h1>TOPdesk Self-Service Portal</h1>
 
@@ -48,7 +48,12 @@ I took on the organisation and facilitation of the sessions. Our setup was a tad
 
 They were really enthusiastic during the user journey mapping session and because of the feasibility concerns we had scheduled in time for the engineers to conduct feasibility spikes while I was ideating with my peer designer. 
 
-**[Screenshot of ideation]**
+![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-sprint-1.png)
+
+![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-sprint-2.png)
+
+![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-sprint-3.png)
+
 
 Around the end of day two, with our ideas presented, we dissected the proposals and picked one solution that is both high feasibility and high impact.
 
@@ -70,4 +75,10 @@ This constraint remained with us even after the design sprint into a beta period
 
 ## Implementation
 
-[Gallery of UIs]
+![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-concept-home.png)
+
+![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-concept-onboarding.png)
+
+![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-home.png)
+
+![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-results.png)

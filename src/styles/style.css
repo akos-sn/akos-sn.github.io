@@ -158,6 +158,12 @@ a {
 	color: var(--fg-accent);
 }
 
+a:hover {
+	color: var(--fg-accent);
+	text-decoration: none;
+}
+
+
 .avatar {
     max-width: 200px;
     border-radius: 100%;
