@@ -219,7 +219,49 @@ footer svg {
         <section id="projects">
                 <h2>Selected projects</h2>
                 <div class="project-grid">
-                <div class="project-tile">
+                  <div class="project-tile">
+                      <img src="/assets/img/ds-devmode.png">
+                      <div class="project-title">
+                        <a href="/portfolio/ops-design-system.html"><h3>Design System: Shared language</h3></a>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Design Lead</p>
+                        <p class="result">Shared language between developers and designers.</p>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Impact</p>
+                        <p class="result">Simplified design handoff process.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
+                      <img src="/assets/img/ds-vision-thumbnail.png">
+                      <div class="project-title">
+                        <a href="/portfolio/ops-design-system-vision.html"><h3>Design System: Product vision</h3></a>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Design Lead</p>
+                        <p class="result">Showcasing the importance of the Design System as a product</p>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Impact</p>
+                        <p class="result">Higher trust and adoption of our Design System.</p>
+                      </div>
+                  </div>
+									<div class="project-tile">
+                      <img src="/assets/img/ssp-thumbnail.png">
+                      <div class="project-title">
+                        <a href="/portfolio/ux-ssp.html"><h3>TOPdesk Self-Service Portal </h3></a>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Design Lead</p>
+                        <p class="result">AI-assisted search to fast-track users to meaningful answers to their questions.</p>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Impact</p>
+                        <p class="result">Shorter time on task, less incoming requests.</p>
+                      </div>
+                  </div>
+									<div class="project-tile">
                       <img src="/assets/img/measuring-ux-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/ops-measuring-ux.html"><h3>Measuring UX</h3></a>
@@ -234,34 +276,6 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/ds-devmode.png">
-                      <div class="project-title">
-                        <a href="/portfolio/ops-design-system.html"><h3>Design System: Shared language</h3></a>
-                      </div>
-                      <div class="project-description">
-                        <p class="result-header">DesignOps</p>
-                        <p class="result">Shared language between developers and designers.</p>
-                      </div>
-                      <div class="project-description">
-                        <p class="result-header">Impact</p>
-                        <p class="result">Simplified design handoff process.</p>
-                      </div>
-                  </div>
-                  <div class="project-tile">
-                      <img src="/assets/img/ds-vision-thumbnail.png">
-                      <div class="project-title">
-                        <a href="/portfolio/ops-design-system-vision.html"><h3>Design System: Product vision</h3></a>
-                      </div>
-                      <div class="project-description">
-                        <p class="result-header">DesignOps</p>
-                        <p class="result">Showcasing the importance of the Design System as a product</p>
-                      </div>
-                      <div class="project-description">
-                        <p class="result-header">Impact</p>
-                        <p class="result">Higher trust and adoption of our Design System.</p>
-                      </div>
-                  </div>
-                  <div class="project-tile">
                       <img src="/assets/img/aerq-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/ux-aerq.html"><h3>AERQ</h3></a>
@@ -273,20 +287,6 @@ footer svg {
                       <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">A smart notification setup process enabling preventive maintenance.</p>
-                      </div>
-                  </div>
-                  <div class="project-tile">
-                      <img src="/assets/img/ssp-thumbnail.png">
-                      <div class="project-title">
-                        <a href="/portfolio/ux-ssp.html"><h3>TOPdesk Self-Service Portal </h3></a>
-                      </div>
-                      <div class="project-description">
-                        <p class="result-header">UX</p>
-                        <p class="result">AI-assisted search to fast-track users to meaningful answers to their questions.</p>
-                      </div>
-                      <div class="project-description">
-                        <p class="result-header">Impact</p>
-                        <p class="result">Shorter time on task, less incoming requests.</p>
                       </div>
                   </div>
                   <div class="project-tile">
