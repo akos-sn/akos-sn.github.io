@@ -1,4 +1,4 @@
-<a href="/portfolio.html">← Back to portfolio</a>
+<a href="/portfolio.html" class="back-link">Back to portfolio</a>
 
 <h1>Design System: Shared language</h1>
 

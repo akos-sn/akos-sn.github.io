@@ -286,6 +286,11 @@ td {
 tr {
     border-bottom: 1px solid var(--border-subtle);
 }
+.back-link::before {
+	content: "← ";
+	font-family: "Google Sans Code", monospace;
+	font-weight: 100;
+}
 
 
 @media screen and (min-width: 600px) {
