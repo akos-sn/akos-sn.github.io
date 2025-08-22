@@ -1,10 +1,8 @@
 <a href="/portfolio.html">← Back to portfolio</a>
 
-![hero](/assets/img/music-thumbnail.png)
-
 <h1>Sampled Instruments</h1>
 
-<div class="introduction">
+<div class="article-intro introduction">
 
 <bb-tags>
 

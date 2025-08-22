@@ -1,10 +1,8 @@
 <a href="/portfolio.html">← Back to portfolio</a>
 
-![hero](/assets/img/zurvey-2.png)
-
 <h1>Project 1</h1>
 
-<div class="introduction">
+<div class="article-intro introduction">
 
 <bb-tags>
 
