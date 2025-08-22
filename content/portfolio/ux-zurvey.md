@@ -2,7 +2,7 @@
 
 <h1>Project 1</h1>
 
-<div class="article-intro introduction">
+<div class="article-intro">
 
 <bb-tags>
 

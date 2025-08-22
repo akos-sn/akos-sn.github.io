@@ -4,8 +4,9 @@ nav > ul li {
     padding: 0;
 }
 body{
-    font-size: clamp(1.125rem, 1rem + 0.4vw, 1.5rem); line-height: 1.6;
-      font-family: 'Outfit', sans-serif;
+    font-size: clamp(1.125rem, 1rem + 0.4vw, 1.5rem); 
+    line-height: 1.6;
+    font-family: 'Outfit', sans-serif;
     font-weight: 250;
     text-wrap: pretty;
     background: var(--bg-default);
@@ -33,8 +34,8 @@ ul li {
 }
 #introduction > p {
     text-align: center;
-    /* font-size: 3em; */
     font-size: clamp(1.7em, 3vw, 3em);
+    font-weight: 200;
     width: 60%;
     min-width: 280px;
 }
@@ -77,18 +78,10 @@ a:any-link{
 }
 hr {
     border: 0;
-    border-top: 1px solid var(--fg-default) ;
-}
-h2 {
-    font-size: 3em;
-    font-weight: 400;
+    border-top: 1px solid var(--border-subtle) ;
 }
 #about {
     margin-bottom: 40px;
-}
-.about-highlight {
-    font-size: 1.4em;
-    line-height: 1.4;
 }
 #work {
     margin-bottom: 40px;
@@ -118,6 +111,12 @@ h2 {
 .work-grid > a {
     text-decoration: none;
 }
+.value-card {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .project-grid {
   display: flex; 
   flex-direction: column;
@@ -146,9 +145,11 @@ h2 {
   aspect-ratio: 16 / 10;
 }
 .project-tile a, .project-tile h3 {
-  margin: 0;
-  font-size: 1.7rem;
-  font-weight: 300;
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.8rem);
+	font-weight: 300;
+	line-height: 1.1;
+	margin: 0;
+  margin-bottom: 4px;
 }
 .project-tile p {
   margin: 0;
@@ -158,23 +159,19 @@ h2 {
 }
 .result-header {
   font-weight:600;
-  font-size: 1rem;
+  font-size: 1rem; 
 }
 .result {
-  font-size: 1rem;
+  font-size: 1rem; 
 }
 footer svg {
     fill: var(--fg-default);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     #introduction {
-        height: 100vh;
+        height: calc(100vh - 130px);
         padding: 0;
     }
-    .about-highlight {
-        font-size: 1.8em;
-        line-height: 1.4;
-    }   
     .about-grid {
         margin-bottom: 40px;
         display: grid; 
@@ -223,12 +220,12 @@ footer svg {
                 <h2>Selected projects</h2>
                 <div class="project-grid">
                 <div class="project-tile">
-                      <img src="/assets/img/motie-2.jpg">
+                      <img src="/assets/img/measuring-ux-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/ops-measuring-ux.html"><h3>Measuring UX</h3></a>
-                        <sup>Ops</sup>
                       </div>
                       <div class="project-description">
+                        <p class="result-header">DesignOps</p>
                         <p class="result">Creating a framework for connecting usability pain points and business goals.</p>
                       </div>
                       <div class="project-description">
@@ -237,12 +234,12 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/motie-2.jpg">
+                      <img src="/assets/img/ds-devmode.png">
                       <div class="project-title">
-                        <a href="/portfolio/ops-design-system.html"><h3>TOPdesk Design System</h3></a>
-                        <sup>Ops</sup>
+                        <a href="/portfolio/ops-design-system.html"><h3>Design System: Shared language</h3></a>
                       </div>
                       <div class="project-description">
+                        <p class="result-header">DesignOps</p>
                         <p class="result">Shared language between developers and designers.</p>
                       </div>
                       <div class="project-description">
@@ -251,12 +248,26 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
+                      <img src="/assets/img/ds-vision-thumbnail.png">
+                      <div class="project-title">
+                        <a href="/portfolio/ops-design-system-vision.html"><h3>Design System: Product vision</h3></a>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">DesignOps</p>
+                        <p class="result">Showcasing the importance of the Design System as a product</p>
+                      </div>
+                      <div class="project-description">
+                        <p class="result-header">Impact</p>
+                        <p class="result">Higher trust and adoption of our Design System.</p>
+                      </div>
+                  </div>
+                  <div class="project-tile">
                       <img src="/assets/img/aerq-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/ux-aerq.html"><h3>AERQ</h3></a>
-                        <sup>UX</sup>
                       </div>
                       <div class="project-description">
+                      <p class="result-header">UX</p>
                         <p class="result">Preventive maintenance of aircrafts' in-flight entertainment systems.</p>
                       </div>
                       <div class="project-description">
@@ -265,12 +276,12 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/ssp-thumbnail2.png">
+                      <img src="/assets/img/ssp-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/ux-ssp.html"><h3>TOPdesk Self-Service Portal </h3></a>
-                        <sup>UX</sup>
                       </div>
                       <div class="project-description">
+                        <p class="result-header">UX</p>
                         <p class="result">AI-assisted search to fast-track users to meaningful answers to their questions.</p>
                       </div>
                       <div class="project-description">
@@ -279,26 +290,12 @@ footer svg {
                       </div>
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/zurvey-thumbnail.png">
-                      <div class="project-title">
-                        <a href="/portfolio/ux-zurvey.html"><h3>zurvey.io</h3></a>
-                        <sup>UX</sup>
-                      </div>
-                      <div class="project-description">
-                        <p class="result">Creating a workflow for multilingual survey editing.</p>
-                      </div>
-                      <div class="project-description">
-                        <p class="result-header">Impact</p>
-                        <p class="result">Less overhead, more inclusive authoring tool.</p>
-                      </div>
-                  </div>
-                  <div class="project-tile">
-                      <img src="/assets/img/motie-2.jpg">
+                      <img src="/assets/img/motie-thumbnail.png">
                       <div class="project-title">
                         <a href="/portfolio/uxdev-motie.html"><h3>motie.</h3></a>
-                        <sup>UX+Dev</sup>
                       </div>
                       <div class="project-description">
+                        <p class="result-header">UX+Dev</p>
                         <p class="result">Modular, distraction-free notetaking.</p>
                       </div>
                   </div>
@@ -307,25 +304,18 @@ footer svg {
         <hr>
         <section id="core-values">
             <h2>Core values</h2>
-            <div class="work-grid">
-                <div class="work-card">
-                    <h3>1. Inclusivity</h3>
-                    <p>A design usable by anyone is a good product experience.</p>
+            <div class="value-list">
+                <div class="value-card">
+                    <h3>1. Inclusivity and empathy</h3>
+                    <p>A design usable by anyone is a good product experience. <br />
+                    Listening to human pain-points and addressing them during design proposals.</p>
                 </div>
-                <div class="work-card">
+                <div class="value-card">
                     <h3>2. Simplicity</h3>
                     <p>Elegant, minimalist design approaches complex challenges with thoughtful, seemingly effortless solutions.</p>
                 </div>
-                <div class="work-card">
-                    <h3>3. Empathy</h3>
-                    <p>Listening to human pain-points and addressing them during design proposals.</p>
-                </div>
-                <div class="work-card">
-                    <h3>4. Authenticity</h3>
-                    <p>Everything has a character that us humans resonate with. Designing with this character in mind evolves the look-and-feel of a product.</p>
-                </div>
-                <div class="work-card">
-                    <h3>5. Curiousity</h3>
+                <div class="value-card">
+                    <h3>3. Curiousity</h3>
                     <p>Continuous learning, experimentation drives innovation and growth.</p>
                 </div>
               </div>

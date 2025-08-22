@@ -2,19 +2,29 @@
 
 <h1>AERQ</h1>
 
-<div class="article-intro introduction">
+<div class="article-intro">
 
 <bb-tags>
 
-UX Design — 2025 TOPdesk
+UX Design — 2023 AERQ
 
 </bb-tags>
 
 <bb-intro>
 
-AI-assisted search to fast-track users to meaningful answers to their questions.
+Preventive maintenance of aircrafts' in-flight entertainment systems.
 
 </bb-intro>
+
+---
+
+<bb-tags>
+
+Context
+
+</bb-tags>
+
+Our team was responsible for the Ground Operations/Maintenance side of the In-flight Entertainment (IFE) service AERQ was providing.
 
 ---
 
@@ -24,59 +34,22 @@ Challenge
 
 </bb-tags>
 
-We were taking on a legacy project update filled with technical limitations. With a mono-functional frontend engineering team and another designer we had no impact on the backend.
-
-Our domain’s primary goal is to deflect calls that could be solved with information already existing in the client’s knowledge base.
-
----
-
-<bb-tags>
-
-Approach
-
-</bb-tags>
-
-We had the idea to have a design sprint and generate ideas for this project with hard technical limitations.
+The world of aircraft maintenance is highly complex and expensive. We attempted to design an interaction flow that assists in preventive maintenance scheduling.
 
 </div>
 
-## Design Sprint
+## Research
 
-I took on the organisation and facilitation of the sessions. Our setup was a tad unusual in that we included our engineers in the whole process. 
-
-They were really enthusiastic during the user journey mapping session and because of the feasibility concerns we had scheduled in time for the engineers to conduct feasibility spikes while I was ideating with my peer designer. 
-
-![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-sprint-1.png)
-
-![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-sprint-2.png)
-
-![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-sprint-3.png)
-
-
-Around the end of day two, with our ideas presented, we dissected the proposals and picked one solution that is both high feasibility and high impact.
-
-Our idea included an AI summarisation of available articles and we managed to help the users by extracting keywords from their search query.
-
-### We decided to build it
-
-Our unusual design sprint turned into a hackathon. We already had interviews scheduled for Thursday afternoon with internal consultants, and for Friday afternoon with clients we had contact with from the exploratory interviews.
-
-The engineers started with a simple prototype, while us designers were working on the design handoff specs.
-
-We had a coded prototype by the end of Thursday. 
-
-### A sidebar about data
-
-As designers we picked up the habit of reading REST API response JSONs to figure out if we have access to certain information at any given time.
-
-This constraint remained with us even after the design sprint into a beta period.
+Approaching this utterly broad topic was demanding and required a lot of reading. I have consulted our stakeholders for user pain-points, and have consulted this paper, to understand the industry's pain-points and underlying challenges, called [An optimization model for aircraft maintenance scheduling and re-assignment](https://www.sciencedirect.com/science/article/abs/pii/S0965856402000046?via%3Dihub), which has been, to my understanding, a cornerstone study in maintenance scheduling.
 
 ## Implementation
 
-![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-concept-home.png)
+![alt text](/assets/img/aerq-overview.png)
 
-![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-concept-onboarding.png)
+![alt text](/assets/img/aerq-resolve-modal.png)
 
-![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-home.png)
+![alt text](/assets/img/aerq-timeline.png)
 
-![Screenshot of the FigJam ideation of day 1 of the design sprint, mapping](/assets/img/ssp-results.png)
+![alt text](/assets/img/aerq-email.png)
+
+![alt text](/assets/img/aerq-notification.png)

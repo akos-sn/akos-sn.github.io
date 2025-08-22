@@ -1,18 +1,18 @@
 <a href="/portfolio.html">← Back to portfolio</a>
 
-<h1>Project 1</h1>
+<h1>motie.</h1>
 
-<div class="article-intro introduction">
+<div class="article-intro">
 
 <bb-tags>
 
-UX Design — 2021 zurvey.io
+UX Design & Frontend — 2022 self-initiated project
 
 </bb-tags>
 
 <bb-intro>
 
-Creating a workflow for multilingual survey editing.
+Modular, distraction-free notetaking.
 
 </bb-intro>
 
@@ -24,9 +24,9 @@ Context
 
 </bb-tags>
 
-This project was a request from a handful of clients operating in different countries. The language recognition was driven by a Text Analysis API which was developed in-house to obviously analyse written text. 
+Motie is a practice micro-app project of mine.
 
-This feature needed to be seamlessly integrated into the pre-existing Survey Builder, considering that this was a paid-for feature; the flow of information should be intact with or without this feature's availability.
+The aim for this project is twofold. One is for me to have a project I can practice my ReactJS chops on, the other is to practice designing for a truly Human problem.
 
 ---
 
@@ -36,12 +36,14 @@ Challenge
 
 </bb-tags>
 
-This feature needed to be accessible from an URL so that translators would get instant access to the translation workflow. The translation workflow needed to be understandable without clicking back-and-forth screens and display all the required information within a single screen.
+The primary problem I try to face is the problem of overstimulation during planning. By creating restrictions, we're forced to make do with our toolkit. Without productivity features in every nook and cranny, we never waste time to select the proper tools. We only need a sticky note.
 
 </div>
 
 ## Implementation
 
-This is the challenge
+![alt text](/assets/img/motie-1.jpg)
 
-![alt text](/assets/img/zurvey-2.png)
+![alt text](/assets/img/motie-2.jpg)
+
+![alt text](/assets/img/motie-3.jpg)

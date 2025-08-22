@@ -6,7 +6,7 @@
 
 <bb-tags>
 
-UX Design — 2025 TOPdesk
+UX Design & Design Lead — 2025 TOPdesk
 
 </bb-tags>
 
@@ -70,6 +70,16 @@ We had a coded prototype by the end of Thursday.
 As designers we picked up the habit of reading REST API response JSONs to figure out if we have access to certain information at any given time.
 
 This constraint remained with us even after the design sprint into a beta period.
+
+## Learnings
+
+### Embrace cross-functional environment
+
+Involving engineers in design sprints was a brilliant experience. They reported feeling engaged and in control of the product's direction. It taught me to strategise on the spot. How to make every hour useful—thinking about engineers as well. I was already an advocate for a close collaboration during a regular sprint, this notion was crucial during the entire process. 
+
+### Vision instead of control
+
+It also taught me when to let control go during high-stress environments and how to trust the experts around us. There was a pivotal moment when I realised it would not be sustainable and unproductive to try and control the event, so I decided to nail the vision home: what are we solving, what are we building? Agreed on a strategy, we defined and assigned tasks together, and we ended up surprising each other continuously.
 
 ## Implementation
 
