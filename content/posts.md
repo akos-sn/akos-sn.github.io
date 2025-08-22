@@ -17,3 +17,5 @@ Sometimes I write articles on UX, org health, processes, and miscellanious topic
 </div>
 
 ---
+
+This page is currently empty. Check back later.
