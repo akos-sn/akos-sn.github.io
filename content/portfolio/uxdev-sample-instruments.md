@@ -22,7 +22,7 @@ Sample based virtual instruments, recorded note-by-note.
 
 <bb-tags>
 
-CONTEXT
+Context
 
 </bb-tags>
 

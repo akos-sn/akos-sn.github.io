@@ -195,6 +195,7 @@ bb-tags p {
 	width: 100%;
 	text-align: start;
 	margin: 12px 0;
+	text-transform: uppercase;
 }
 
 .posts-metadata {

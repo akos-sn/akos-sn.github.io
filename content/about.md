@@ -6,7 +6,7 @@
 
 <bb-tags>
 
-ABOUT
+About
 
 </bb-tags>
 

@@ -6,7 +6,7 @@
 
 <bb-tags>
 
-INTRODUCTION
+Hello
 
 </bb-tags>
 

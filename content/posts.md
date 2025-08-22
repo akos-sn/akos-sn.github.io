@@ -4,7 +4,7 @@
 
 <bb-tags>
 
-POSTS
+Posts
 
 </bb-tags>
 

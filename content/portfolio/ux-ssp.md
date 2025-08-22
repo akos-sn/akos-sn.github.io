@@ -22,7 +22,7 @@ AI-assisted search to fast-track users to meaningful answers to their questions.
 
 <bb-tags>
 
-CHALLENGE
+Challenge
 
 </bb-tags>
 
@@ -34,7 +34,7 @@ Our domain’s primary goal is to deflect calls that could be solved with inform
 
 <bb-tags>
 
-APPROACH
+Approach
 
 </bb-tags>
 
