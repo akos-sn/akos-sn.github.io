@@ -26,6 +26,8 @@ Challenge
 
 We were facing a plateau of adoption and encountered voices distrustful of the design system's value despite the clear benefits. We decided to go on a bit of a marketing campaign and amplifying the added value of a design system beyond a component kit.
 
+---
+
 <bb-tags>
 
 Approach
