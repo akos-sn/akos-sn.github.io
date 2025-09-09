@@ -149,7 +149,7 @@ color-scheme: light;
 
 body {
 	font-size: clamp(1.125rem, 1rem + 0.4vw, 1.5rem);
-	line-height: 1.6;
+	line-height: 1.7;
     font-family: var(--font-sans);
 	font-weight: 300;
 	text-wrap: pretty;
@@ -284,7 +284,8 @@ a:focus {
 
 .avatar {
     max-width: 200px;
-    border-radius: 100%;
+    border-radius: 4px;
+	filter:grayscale(100%);
 }
 
 bb-card {

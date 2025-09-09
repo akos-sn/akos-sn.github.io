@@ -4,11 +4,6 @@ nav > ul li {
     padding: 0;
 }
 body{
-    font-size: clamp(1.125rem, 1rem + 0.4vw, 1.5rem); 
-    line-height: 1.6;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 250;
-    text-wrap: pretty;
     background: var(--bg-default);
     color: var(--fg-default);
     margin: auto;
@@ -147,10 +142,6 @@ hr {
 	line-height: 1.1;
 	margin: 0;
   margin-bottom: 4px;
-}
-.project-tile a:hover,
-.project-tile a:focus{
-	text-decoration-color: var(--fg-default);
 }
 .project-tile p {
   margin: 0;
