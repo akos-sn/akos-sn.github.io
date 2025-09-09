@@ -32,14 +32,14 @@ checkTheme();
 // Optionally, you could call `switchTheme()` based on a user action like a button click
 
 // Email sanitisation
-document.addEventListener('DOMContentLoaded', function () {
-const user = "hello";
-const domain = "akos.sn";
+document.addEventListener('DOMContentLoaded', function() {
+	const user = 'hello';
+	const domain = 'akos.sn';
 
-const email = user + "@" + domain;
-const emailLink = document.getElementById("email-link");
-if (!emailLink) return;
+	const email = user + '@' + domain;
+	const emailLink = document.getElementById('email-link');
+	if (!emailLink) return;
 
-emailLink.setAttribute("href", "mailto:" + email + "?subject=Hi!");
-emailLink.textContent = "Email"; // or keep "Email me"
+	emailLink.setAttribute('href', 'mailto:' + email + '?subject=Hi!');
+	emailLink.textContent = 'Email';
 });

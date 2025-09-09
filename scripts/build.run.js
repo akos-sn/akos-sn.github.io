@@ -15,7 +15,7 @@ await build({
 await cp(
 	resolve(import.meta.dirname, '../src'),
 	resolve(import.meta.dirname, '../public/assets'),
-	{ force: true, recursive: true }
+	{ force: true, recursive: true },
 );
 
 /**
@@ -33,8 +33,8 @@ async function setupMarkdown({ htmlTemplatePath, title }) {
 		convertMdToHtml(markdown) {
 			const html = md.render(markdown);
 			return pageTemplate
-					.replace('<!-- [title] -->', title)
-					.replace('<!-- [content] -->', html);
+				.replace('<!-- [title] -->', title)
+				.replace('<!-- [content] -->', html);
 		},
 	};
 }
@@ -45,6 +45,8 @@ async function setupMarkdown({ htmlTemplatePath, title }) {
  * @property {string} date
  * @property {string[]} tags
  * @property {string} slug
+ * @property {string} thumbnail
+ * @property {string} description
  */
 
 /**
@@ -83,80 +85,91 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
  *
  * @param {string} content
  * @returns {{
- *   metadata: { title?: string, date?: string, tags?: string[] },
+ *   metadata: { title?: string, date?: string, tags?: string[], thumbnail?: string, description?: string },
  *   body: string
  * }}
  */
-function parseFrontMatter(content) {
-	if (typeof content !== 'string') {
-		return { metadata: {}, body: '' };
-	}
+	function parseFrontMatter(content) {
+		if (typeof content !== 'string') {
+			return { metadata: {}, body: '' };
+		}
 
-	const lines = content.split('\n');
-	if (lines.length === 0) {
-		return { metadata: {}, body: content };
-	}
+		const lines = content.split('\n');
+		if (lines.length === 0) {
+			return { metadata: {}, body: content };
+		}
 
-	const firstLine = lines[0];
-	if (typeof firstLine !== 'string' || firstLine.trim() !== '---') {
-		return { metadata: {}, body: content };
-	}
+		const firstLine = lines[0];
+		if (typeof firstLine !== 'string' || firstLine.trim() !== '---') {
+			return { metadata: {}, body: content };
+		}
 
-	/** @type {{ title?: string, date?: string, tags?: string[] }} */
-	const metadata = {};
-	let i = 1;
+		/** @type {{ title?: string, date?: string, tags?: string[], thumbnail?: string, description?: string }} */
+		const metadata = {};
+		let i = 1;
 
-	while (i < lines.length) {
-		const rawLine = lines[i];
-		if (typeof rawLine !== 'string') {
+		while (i < lines.length) {
+			const rawLine = lines[i];
+			if (typeof rawLine !== 'string') {
+				i++;
+				continue;
+			}
+
+			const line = rawLine.trim();
+			if (line === '---') {
+				i++;
+				break;
+			}
+
+			const [rawKey, ...rawValueParts] = line.split(':');
+			if (!rawKey || rawValueParts.length === 0) {
+				i++;
+				continue;
+			}
+
+			const key = rawKey.trim();
+			const value = rawValueParts.join(':').trim();
+
+			switch (key) {
+				case 'title':
+					metadata.title = value;
+					break;
+				case 'date':
+					metadata.date = value;
+					break;
+				case 'tags':
+					metadata.tags = value
+						.split(',')
+						.map(tag => tag.trim())
+						.filter(Boolean);
+					break;
+				case 'thumbnail':
+					metadata.thumbnail = value;
+					break;
+				case 'description':
+					metadata.description = value;
+					break;
+				default:
+					break;
+			}
+
 			i++;
-			continue;
 		}
 
-		const line = rawLine.trim();
-		if (line === '---') {
-			i++;
-			break;
-		}
-
-		const [rawKey, ...rawValueParts] = line.split(':');
-		if (!rawKey || rawValueParts.length === 0) {
-			i++;
-			continue;
-		}
-
-		const key = rawKey.trim();
-		const value = rawValueParts.join(':').trim();
-
-		switch (key) {
-			case 'title':
-				metadata.title = value;
-				break;
-			case 'date':
-				metadata.date = value;
-				break;
-			case 'tags':
-				metadata.tags = value
-					.split(',')
-					.map(tag => tag.trim())
-					.filter(Boolean);
-				break;
-			default:
-				break;
-		}
-
-		i++;
+		const body = lines.slice(i).join('\n');
+		return { metadata, body };
 	}
-
-	const body = lines.slice(i).join('\n');
-	return { metadata, body };
-}
 
 
 	const htmlFiles = mdFilesRead.map(({ path, content }) => {
 		const isPost = path.includes('/posts/');
 		const { metadata, body } = parseFrontMatter(content);
-		const html = convertMdToHtml(body);
+
+		let html = convertMdToHtml(body);
+
+		if (isPost) {
+			html = `<article>\n${html}\n</article>`;
+		}
 
 		const outputPath = path.replace(contentDir, outputDir).replace(/\.md$/, '.html');
 
@@ -165,6 +178,8 @@ function parseFrontMatter(content) {
 				title: metadata.title,
 				date: metadata.date,
 				tags: metadata.tags ?? [],
+				thumbnail: metadata.thumbnail ?? '',
+				description: metadata.description ?? '',
 				slug: path.replace(contentDir, '').replace(/\.md$/, '.html'),
 			});
 		}
@@ -192,14 +207,15 @@ function parseFrontMatter(content) {
 		for (const post of postsMeta) {
 			postsListHtml +=
 				'<li class="posts-list-item">' +
-					'<div class="posts-metadata">' +
-						'<div class="post-tags">' + post.tags + '</div>' +
-						'<span>' + '•' + '</span>' +
-						'<span class="post-date">' + post.date + '</span><br />' +
-					'</div>' +
-					'<a href="' + post.slug + '">' + post.title + '</a>' +
-				'</li>\n' +
-				'<hr />';
+				'<a href="' + post.slug + '"> <img src="' + post.thumbnail + '" /> </a>' +
+				'<div class="posts-metadata">' +
+				'<div class="post-tags">' + post.tags + '</div>' +
+				'<span>' + '•' + '</span>' +
+				'<span class="post-date">' + post.date + '</span><br />' +
+				'</div>' +
+				'<a href="' + post.slug + '">' + post.title + '</a>' +
+				'<p class="posts-description">' + post.description + '</p>' +
+				'</li>\n';
 		}
 		postsListHtml += '</ul>';
 
