@@ -43,15 +43,15 @@
 }
 
 @font-face {
-	font-family: "STIX Two Text";
-	src: url('../fonts/STIXTwoText.woff') format('woff');
+	font-family: "CormorantGaramond";
+	src: url('../fonts/CormorantGaramond.woff') format('woff');
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "STIX Two Text";
-	src: url('../fonts/STIXTwoText-Italic.woff') format('woff');
+	font-family: "CormorantGaramond";
+	src: url('../fonts/CormorantGaramond-Italic.woff') format('woff');
 	font-style: italic;
 	font-display: swap;
 }
@@ -99,7 +99,7 @@
 
 :root {
 	--font-sans: "Helvetica Neue", "Nimbus Sans L", sans-serif;
-	--font-serif: "STIX Two Text", "Times New Roman", serif;
+	--font-serif: "CormorantGaramond", "Times New Roman", serif;
 	--font-serif-accent: "Instrument Serif", var(--font-serif);
 	--font-mono: "IBM Plex Mono", "Courier Prime", monospace;
 	/* --font-serif: 'SourceSerif', serif;

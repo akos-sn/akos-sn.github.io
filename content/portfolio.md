@@ -138,7 +138,7 @@ hr {
 }
 .project-tile a, .project-tile h3 {
   font-size: clamp(1.25rem, 1rem + 1vw, 1.8rem);
-	font-weight: 300;
+	font-weight: 500;
 	line-height: 1.1;
 	margin: 0;
   margin-bottom: 4px;

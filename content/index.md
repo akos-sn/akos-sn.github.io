@@ -1,6 +1,6 @@
 <h1 class="sr-only"> Introduction </h1>
 
-<img class="avatar" src="/assets/img/akos-2024.jpg" alt="" />
+<!-- <img class="avatar" src="/assets/img/akos-2024.jpg" alt="" /> -->
 
 <div class="introduction">
 
