@@ -73,9 +73,6 @@ section {
     margin: 0 auto;
     padding: 0 16px;
 }
-a:any-link{
-    color: var(--fg-default);
-}
 hr {
     border: 0;
     border-top: 1px solid var(--border-subtle) ;
@@ -135,7 +132,7 @@ hr {
   gap: 8px;
 }
 .project-title > sup {
-  font-family: "Google Sans Code", monospace;
+  font-family: var(--font-mono);
   line-height: 2.4rem;
   font-weight: 500;
 }
@@ -155,7 +152,7 @@ hr {
   margin: 0;
 }
 .project-description {
-  font-family: "Google Sans Code", monospace;
+  font-family: var(--font-mono);
 }
 .result-header {
   font-weight:600;
@@ -165,7 +162,7 @@ hr {
   font-size: 1rem; 
 }
 footer svg {
-    fill: var(--fg-default);
+    fill: var(--fg-gradient);
 }
 @media screen and (min-width: 900px) {
     #introduction {

@@ -163,11 +163,13 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 
 	const htmlFiles = mdFilesRead.map(({ path, content }) => {
 		const isPost = path.includes('/posts/');
+		const isPortfolio = path.includes('/portfolio/');
+		const isDraft = path.includes('/drafts/');
 		const { metadata, body } = parseFrontMatter(content);
 
 		let html = convertMdToHtml(body);
 
-		if (isPost) {
+		if (isPost || isPortfolio || isDraft) {
 			html = `<article>\n${html}\n</article>`;
 		}
 
