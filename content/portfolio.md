@@ -148,6 +148,10 @@ hr {
 	margin: 0;
   margin-bottom: 4px;
 }
+.project-tile a:hover,
+.project-tile a:focus{
+	text-decoration-color: var(--fg-default);
+}
 .project-tile p {
   margin: 0;
 }
