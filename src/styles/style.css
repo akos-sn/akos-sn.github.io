@@ -161,6 +161,7 @@ body {
 	color: var(--fg-default);
 	background: var(--bg-default);
 	margin:0;
+	padding-top: 3.75rem;
 }
 
 hr {
@@ -218,13 +219,23 @@ main {
 }
 
 nav {
-	display: grid;
+	/* display: grid;
 	grid-template-columns: 1fr 3fr;
 	align-items: center;
-	padding: 16px;
-	font-weight: 200;
-	font-family: var(--font-mono);
+	padding: 16px; */
+	font-weight: 500;
 	background-color:var(--bg-default);
+	width: 100%;
+	font-family: var(--font-sans);
+    height: 3.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+	box-sizing: border-box;
 }
 
 nav ul{
@@ -249,6 +260,8 @@ nav a {
 }
 nav .brand-wrapper {
 	margin: auto 0;
+	display: flex;
+	align-self: center;
 }
 nav a:hover {
 	text-decoration: underline;
@@ -260,8 +273,8 @@ nav button {
     border-radius: 100px;
     color: var(--fg-default);
 	font-size: 0.875rem;
-	font-weight: 200;
-	font-family: var(--font-mono);
+	font-weight: 500;
+	font-family: var(--font-sans);
 	cursor: pointer;
 }
 
@@ -422,11 +435,11 @@ tr {
 @media screen and (min-width: 600px) {
 	main,
 	nav {
-		padding: 40px;
 		margin: 0 auto;
 	}
 	footer {
 		margin: 0px;
+		padding: 40px;
 	}
 	.wide {
 		width: 200%;
@@ -475,10 +488,10 @@ article .back-link {
 	font-weight: 400;
 }
 
-article series-heading {
+series-heading {
 	margin-top: 48px;
 }
-article series-heading h1 {
+series-heading h1 {
 	font-family: var(--font-serif-accent);
 	font-size: clamp(4rem, 3rem + 3vw, 5rem);
 	margin-top:0;
@@ -524,4 +537,11 @@ article blockquote p{
 
 article footer > h2 {
 	text-align: left;
+}
+
+/* FOUNDRY PAGE SPECIFIC STYLES */
+.foundry-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 16px;
 }

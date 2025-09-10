@@ -20,7 +20,7 @@ I am a designer with over ten years of experience in product design, design oper
 
 ## About the website
 
-I am constantly thinking about the philosophy and ethics of UX, organisational systems, and the human context of it all. I intend to reflect on UX as a human-facing practice rather than writing "top 10" listicles.
+I am constantly thinking about the philosophy and ethics of UX, organisational systems, and the human context of it all. I intend to reflect on UX as a human-facing practice and going into a deep-dive into the fundamentals of the UX practice.
 
 ## Reading (2025)
 

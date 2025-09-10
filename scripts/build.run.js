@@ -62,6 +62,9 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 	/** @type {PostMeta[]} */
 	const postsMeta = [];
 
+	/** @type {PostMeta[]} */
+	const foundryMeta = [];
+
 	const mdFiles = (await readdir(contentDir, {
 		recursive: true,
 		withFileTypes: true,
@@ -163,13 +166,14 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 
 	const htmlFiles = mdFilesRead.map(({ path, content }) => {
 		const isPost = path.includes('/posts/');
+		const isFoundry = path.includes('/foundry/');
 		const isPortfolio = path.includes('/portfolio/');
 		const isDraft = path.includes('/drafts/');
 		const { metadata, body } = parseFrontMatter(content);
 
 		let html = convertMdToHtml(body);
 
-		if (isPost || isPortfolio || isDraft) {
+		if (isPost || isPortfolio || isDraft || isFoundry) {
 			html = `<article>\n${html}\n</article>`;
 		}
 
@@ -177,6 +181,16 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 
 		if (isPost && metadata.title && metadata.date) {
 			postsMeta.push({
+				title: metadata.title,
+				date: metadata.date,
+				tags: metadata.tags ?? [],
+				thumbnail: metadata.thumbnail ?? '',
+				description: metadata.description ?? '',
+				slug: path.replace(contentDir, '').replace(/\.md$/, '.html'),
+			});
+		}
+		if (isFoundry && metadata.title && metadata.date) {
+			foundryMeta.push({
 				title: metadata.title,
 				date: metadata.date,
 				tags: metadata.tags ?? [],
@@ -215,7 +229,7 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 				'<span>' + '•' + '</span>' +
 				'<span class="post-date">' + post.date + '</span><br />' +
 				'</div>' +
-				'<a href="' + post.slug + '">' + post.title + '</a>' +
+				'<a href="' + post.slug + '"><h3>' + post.title + '</h3></a>' +
 				'<p class="posts-description">' + post.description + '</p>' +
 				'</li>\n';
 		}
@@ -229,5 +243,30 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 		console.log('Generated posts.html');
 
 	}
+	// Generate foundry.html
+	if (foundryMeta.length > 0) {
+		foundryMeta.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+		const originalFoundryMd = await readFile('content/foundry.md', 'utf-8');
+
+		let foundryListHtml = '<ul class="foundry-list wide">\n';
+		for (const item of foundryMeta) {
+			foundryListHtml +=
+				'<li class="posts-list-item">' +
+				'<a href="' + item.slug + '"> <img src="' + item.thumbnail + '" /> </a> <br/>' +
+				'<a href="' + item.slug + '">' + item.title + '</a>' +
+				'<p class="posts-description">' + item.description + '</p>' +
+				'</li>\n';
+		}
+		foundryListHtml += '</ul>';
+
+		const fullFoundryMd = originalFoundryMd.replace('<!-- FOUNDRY-LIST -->', foundryListHtml);
+		const foundryHtml = convertMdToHtml(fullFoundryMd);
+		const foundryOutputPath = resolve(outputDir, 'foundry.html');
+
+		await writeFile(foundryOutputPath, foundryHtml, 'utf-8');
+		console.log('Generated foundry.html');
+	}
+
 }
 

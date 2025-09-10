@@ -1,8 +1,7 @@
 ---
-title: Piano songs
-date: 20 August 2025
-tags: UX Maturity
-series: Foundations
+title: Layout
+date: 10 September 2025
+tags: Foundry
 thumbnail: /assets/img/measuring-ux-thumbnail.png
 description: "On subjectivity, gatekeeping, and the risk of undefined words."
 ---
