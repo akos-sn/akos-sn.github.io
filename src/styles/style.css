@@ -43,15 +43,15 @@
 }
 
 @font-face {
-	font-family: "CormorantGaramond";
-	src: url('../fonts/CormorantGaramond.woff') format('woff');
+	font-family: "Garamond";
+	src: url('../fonts/EBGaramond.woff') format('woff');
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "CormorantGaramond";
-	src: url('../fonts/CormorantGaramond-Italic.woff') format('woff');
+	font-family: "Garamond";
+	src: url('../fonts/EBGaramond-Italic.woff') format('woff');
 	font-style: italic;
 	font-display: swap;
 }
@@ -99,12 +99,17 @@
 
 :root {
 	--font-sans: "Helvetica Neue", "Nimbus Sans L", sans-serif;
-	--font-serif: "CormorantGaramond", "Times New Roman", serif;
+	--font-serif: "Garamond", "Times New Roman", serif;
 	--font-serif-accent: "Instrument Serif", var(--font-serif);
 	--font-mono: "IBM Plex Mono", "Courier Prime", monospace;
 	/* --font-serif: 'SourceSerif', serif;
 	--font-sans: 'Inter', sans-serif;
 	--font-mono: 'Google Sans Code', monospace; */
+
+	--size-h1: clamp(2.75rem, 1.5rem + 4vw, 3.75rem);
+	--size-h2: clamp(2rem, 1.375rem + 2vw, 2.5rem);
+	--size-h3: clamp(1.375rem, 0.75rem + 2vw, 1.875rem);
+	--size-base: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
 
 color-scheme: light;
 	--fg-default: #111111;
@@ -148,9 +153,9 @@ color-scheme: light;
 }
 
 body {
-	font-size: clamp(1.125rem, 1rem + 0.4vw, 1.5rem);
+	font-size: var(--size-base);
 	line-height: 1.7;
-    font-family: var(--font-sans);
+	font-family: var(--font-sans);
 	font-weight: 300;
 	text-wrap: pretty;
 	color: var(--fg-default);
@@ -165,7 +170,7 @@ hr {
 }
 
 h1 {
-	font-size: clamp(1.5rem, 0.9rem + 3vw, 3rem);
+	font-size: var(--size-h1);
 	font-weight: 600;
 	line-height: 1.1;
 	margin: 64px 0;
@@ -173,14 +178,14 @@ h1 {
 }
 
 h2 {
-	font-size: clamp(1.4rem, 16px + 2.4vw, 2.3rem);
+	font-size: var(--size-h2);
 	font-weight: 400;
 	line-height: 1.1;
 	margin-bottom: 0;
 }
 
 h3 {
-	font-size: clamp(1.25rem, 1rem + 1vw, 1.8rem);
+	font-size: var(--size-h3);
 	font-weight: 400;
 	line-height: 1.1;
 	margin-bottom: 0;
@@ -240,7 +245,7 @@ nav li {
 nav a {
 	text-decoration: none;
 	color: var(--fg-default);
-	font-size: 1rem;
+	font-size: 0.875rem;
 }
 nav .brand-wrapper {
 	margin: auto 0;
@@ -271,7 +276,9 @@ code {
 
 a {
 	color: var(--fg-default);
-	text-decoration-color: var(--border-subtle);
+	text-decoration-color: var(--fg-subtle);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
 	transition: 300ms;
 }
 
@@ -279,6 +286,7 @@ a:hover,
 a:focus {
 	color: var(--fg-default);
 	text-decoration-color: var(--fg-default);
+	text-decoration-thickness: 2px;
 }
 
 
@@ -299,19 +307,8 @@ bb-card {
 	max-width: 600px;
 }
 
-.article-intro{
-	padding-bottom: 32px;
-	border-bottom: 1px solid var(--border-subtle);
-	margin-bottom: 32px;
-}
-
-.article-intro * {
-	font-family: var(--font-sans);
-	font-weight: 400;
-}
-
 bb-intro p {
-	font-size: clamp(16px, 24px + 0.3vw, 32px);
+	font-size: var(--size-h3);
 	line-height: 1.6;
 	margin-bottom: 0;
 	width: 100%;
@@ -348,38 +345,12 @@ bb-tags p {
 }
 
 .posts-list-item > a {
-	font-size: 28px;
+	font-size: var(--size-h3);
 }
 
 .posts-description {
 	margin: 0;
 	font-family: var(--font-serif);
-}
-
-article p {
-	font-family: var(--font-serif);
-	font-weight: 300;
-}
-
-article .back-link {
-	font-family: var(--font-sans);
-	font-weight: 400;
-}
-
-article series-heading bb-tags p {
-	font-family: var(--font-mono);
-	margin: 0;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: var(--fg-subtle);
-	text-align: center;
-}
-
-article series-heading h1 {
-	font-family: var(--font-serif-accent);
-	font-size: clamp(3rem, 2.6rem + 3vw, 5rem);
-	margin-top:0;
-	font-weight: 400;
 }
 
 footer {
@@ -413,6 +384,7 @@ footer > h2 {
     font-size: clamp(3em, 8vw, 8em) !important;
     line-height: 1;
     margin: 32px 0;
+	text-align: left;
 }
 footer svg {
     fill: var(--fg-gradient);
@@ -456,11 +428,11 @@ tr {
 	footer {
 		margin: 0px;
 	}
-	.wide,
-	p > img {
-		width: 150%;
+	.wide {
+		width: 200%;
 		max-width: calc(100vw - 80px);
 		align-self: center;
+		text-align: center;
 	}
 	p {
 		display: block;
@@ -470,4 +442,78 @@ tr {
 		justify-content: center;
 		padding: 0 40px;
 	}
+}
+
+
+/* ARTICLE SPECIFIC STYLES */
+.article-intro{
+	padding-bottom: 32px;
+	border-bottom: 1px solid var(--border-subtle);
+	margin-bottom: 32px;
+}
+
+.article-intro * {
+	font-family: var(--font-sans);
+	font-weight: 400;
+}
+
+article h1,
+article h2,
+article h3 {
+	text-align: center;
+}
+
+article p {
+	font-family: var(--font-serif);
+	font-weight: 300;
+	text-indent: 2.5rem;
+}
+
+article .back-link {
+	font-family: var(--font-sans);
+	font-weight: 400;
+}
+
+article series-heading h1 {
+	font-family: var(--font-serif-accent);
+	font-size: clamp(3rem, 2.6rem + 3vw, 5rem);
+	margin-top:0;
+	font-weight: 400;
+}
+article series-heading bb-tags p {
+	font-family: var(--font-mono);
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: var(--fg-subtle);
+	text-align: center;
+	text-indent: 0px;
+}
+
+article blockquote {
+	margin: 64px 0;
+}
+
+article blockquote p{
+	font-size: var(--size-h3);
+	font-family: var(--font-sans);
+	font-weight: 700;
+	margin: auto;
+	text-indent: 0px;
+}
+@media screen and (min-width: 600px) {
+	article main{
+		max-width: 35rem;
+	}
+	article blockquote,
+	article p > img {
+		width: 200%;
+		max-width: calc(100vw - 80px);
+		align-self: center;
+		text-align: center;
+	}
+}
+
+article footer > h2 {
+	text-align: left;
 }
