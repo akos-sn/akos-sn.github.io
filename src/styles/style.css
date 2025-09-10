@@ -299,6 +299,12 @@ bb-card {
 	max-width: 600px;
 }
 
+.article-intro{
+	padding-bottom: 32px;
+	border-bottom: 1px solid var(--border-subtle);
+	margin-bottom: 32px;
+}
+
 .article-intro * {
 	font-family: var(--font-sans);
 	font-weight: 400;
@@ -352,7 +358,7 @@ bb-tags p {
 
 article p {
 	font-family: var(--font-serif);
-	font-weight: 100;
+	font-weight: 300;
 }
 
 article .back-link {
@@ -454,6 +460,7 @@ tr {
 	p > img {
 		width: 150%;
 		max-width: calc(100vw - 80px);
+		align-self: center;
 	}
 	p {
 		display: block;
