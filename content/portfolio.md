@@ -204,7 +204,7 @@ footer svg {
         <section id="introduction">
             <img class="avatar" src="/assets/img/akos-2024.jpg" />
             <p>
-                UX Practitioner and Design Engineer based in the Netherlands with a focus on innovative, inclusive and sustainable solutions.
+                Product Designer and Design Engineer based in the Netherlands with a focus on innovative, inclusive and sustainable solutions.
             </p>
         </section>
         <hr>

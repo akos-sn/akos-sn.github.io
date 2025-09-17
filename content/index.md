@@ -13,7 +13,7 @@ Hello
 <bb-intro>
 
 <p>
-I am Akos Szasz-Nagy, A UX Practitioner and Design Engineer based in the Netherlands with a focus on innovative, inclusive and sustainable solutions.
+I am Akos Szasz-Nagy, A Product Designer and Design Engineer based in the Netherlands with a focus on innovative, inclusive and sustainable solutions.
 </p>
 
 </bb-intro>
