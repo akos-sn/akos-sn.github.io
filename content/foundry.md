@@ -1,40 +1,40 @@
 <style>
-	:root {
-		--foundry-bg: #2a2a2a;
-		--foundry-fg: #f5f5f5;
-		--foundry-border: #3d3d3d;
-		--foundry-accent: #f5f5f5;
-	}
-
 	body {
-		background: var(--foundry-bg);
-		color: var(--foundry-fg);
+		background: var(--bg-gradient);
+		color: var(--fg-gradient);
 	}
 	nav {
-		background: var(--foundry-bg);
-		color: var(--foundry-fg);
-		border-bottom: 1px solid var(--foundry-border)
+		background: var(--bg-gradient);
+		color: var(--fg-gradient);
+    	border-bottom: 1px solid var(--border-subtle);
 	}
 	nav a {
-		color: var(--foundry-fg);
+		color: var(--fg-gradient);
 	}
 	nav a:hover {
-		color: var(--foundry-fg);
-		text-decoration-color: var(--foundry-fg);
+		color: var(--fg-gradient);
+		text-decoration-color: var(--fg-gradient);
 	}
 	a {
-		color: var(--foundry-fg);
+		color: var(--fg-gradient);
 	}
 	a:hover {
-		color: var(--foundry-fg);
-		text-decoration-color: var(--foundry-fg);
+		color: var(--fg-gradient);
+		text-decoration-color: var(--fg-gradient);
 	}
 	nav button {
-		color: var(--foundry-fg);
-		border-color: var(--foundry-fg);
+		color: var(--fg-gradient);
+		border-color: var(--fg-gradient);
+	}
+	footer {
+    	border-top: 1px solid var(--border-subtle);
+	}
+	.foundry-about {
+		margin-top: 64px;
 	}
 </style>
 
+<div class="foundry-about">
 <series-heading>
 
 # Foundry
@@ -47,4 +47,9 @@ A deep-dive series into the foundational concepts of design.
 
 </bb-intro>
 
+In this series I intend to go through the foundational concepts of the craft of design, inspecting the history and the current state of the concept today.
+</div>
+
+<div class="foundry-list-wrapper wide">
 <!-- FOUNDRY-LIST -->
+</div>

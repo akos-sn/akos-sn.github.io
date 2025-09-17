@@ -249,7 +249,7 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 
 		const originalFoundryMd = await readFile('content/foundry.md', 'utf-8');
 
-		let foundryListHtml = '<ul class="foundry-list wide">\n';
+		let foundryListHtml = '<ul class="foundry-list">\n';
 		for (const item of foundryMeta) {
 			foundryListHtml +=
 				'<li class="posts-list-item">' +

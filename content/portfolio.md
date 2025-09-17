@@ -212,10 +212,11 @@ footer svg {
                 <h2>Selected projects</h2>
                 <div class="project-grid">
                   <div class="project-tile">
-                      <img src="/assets/img/ds-devmode.png">
+                      <a href="/portfolio/ops-design-system.html"><img src="/assets/img/ds-devmode.png"></a>
                       <div class="project-title">
                         <a href="/portfolio/ops-design-system.html"><h3>Design System: Shared language</h3></a>
                       </div>
+											<!--
                       <div class="project-description">
                         <p class="result-header">Design Lead</p>
                         <p class="result">Shared language between developers and designers.</p>
@@ -223,13 +224,14 @@ footer svg {
                       <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Simplified design handoff process.</p>
-                      </div>
+                      </div>-->
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/ds-vision-thumbnail.png">
+                      <a href="/portfolio/ops-design-system-vision.html"><img src="/assets/img/ds-vision-thumbnail.png"></a>
                       <div class="project-title">
                         <a href="/portfolio/ops-design-system-vision.html"><h3>Design System: Product vision</h3></a>
                       </div>
+											<!--
                       <div class="project-description">
                         <p class="result-header">Design Lead</p>
                         <p class="result">Showcasing the importance of the Design System as a product</p>
@@ -237,13 +239,14 @@ footer svg {
                       <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Higher trust and adoption of our Design System.</p>
-                      </div>
+                      </div>-->
                   </div>
 									<div class="project-tile">
-                      <img src="/assets/img/ssp-thumbnail.png">
+                      <a href="/portfolio/ux-ssp.html"><img src="/assets/img/ssp-thumbnail.png"></a>
                       <div class="project-title">
                         <a href="/portfolio/ux-ssp.html"><h3>TOPdesk Self-Service Portal </h3></a>
                       </div>
+											<!--
                       <div class="project-description">
                         <p class="result-header">Design Lead</p>
                         <p class="result">AI-assisted search to fast-track users to meaningful answers to their questions.</p>
@@ -251,13 +254,14 @@ footer svg {
                       <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Shorter time on task, less incoming requests.</p>
-                      </div>
+                      </div>-->
                   </div>
 									<div class="project-tile">
-                      <img src="/assets/img/measuring-ux-thumbnail.png">
+                      <a href="/portfolio/ops-measuring-ux.html"><img src="/assets/img/measuring-ux-thumbnail.png"></a>
                       <div class="project-title">
                         <a href="/portfolio/ops-measuring-ux.html"><h3>Measuring UX</h3></a>
                       </div>
+											<!--
                       <div class="project-description">
                         <p class="result-header">DesignOps</p>
                         <p class="result">Creating a framework for connecting usability pain points and business goals.</p>
@@ -265,13 +269,14 @@ footer svg {
                       <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">Shared language with PMs, higher engagement in product decisions.</p>
-                      </div>
+                      </div>-->
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/aerq-thumbnail.png">
+                      <a href="/portfolio/ux-aerq.html"><img src="/assets/img/aerq-thumbnail.png"></a>
                       <div class="project-title">
                         <a href="/portfolio/ux-aerq.html"><h3>AERQ</h3></a>
                       </div>
+											<!--
                       <div class="project-description">
                       <p class="result-header">UX</p>
                         <p class="result">Preventive maintenance of aircrafts' in-flight entertainment systems.</p>
@@ -279,17 +284,18 @@ footer svg {
                       <div class="project-description">
                         <p class="result-header">Impact</p>
                         <p class="result">A smart notification setup process enabling preventive maintenance.</p>
-                      </div>
+                      </div>-->
                   </div>
                   <div class="project-tile">
-                      <img src="/assets/img/motie-thumbnail.png">
+                      <a href="/portfolio/uxdev-motie.html"><img src="/assets/img/motie-thumbnail.png"></a>
                       <div class="project-title">
                         <a href="/portfolio/uxdev-motie.html"><h3>motie.</h3></a>
                       </div>
+											<!--
                       <div class="project-description">
                         <p class="result-header">UX+Dev</p>
                         <p class="result">Modular, distraction-free notetaking.</p>
-                      </div>
+                      </div>-->
                   </div>
               </div>
         </section>

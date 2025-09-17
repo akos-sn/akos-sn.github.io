@@ -31,7 +31,6 @@
 	src: url('../fonts/IBMPlexMono-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
@@ -39,28 +38,24 @@
 	src: url('../fonts/IBMPlexMono-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
 	font-family: "Garamond";
 	src: url('../fonts/EBGaramond.woff') format('woff');
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
 	font-family: "Garamond";
 	src: url('../fonts/EBGaramond-Italic.woff') format('woff');
 	font-style: italic;
-	font-display: swap;
 }
 @font-face {
 	font-family: "Nimbus Sans";
 	src: url('../fonts/NimbusSanL.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
@@ -68,7 +63,6 @@
     src: url('../fonts/NimbusSanL.woff') format('woff');
 	font-weight: 400;
 	font-style: italic;
-	font-display: swap;
 }
 
 @font-face {
@@ -76,7 +70,6 @@
     src: url('../fonts/NimbusSanL.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
@@ -84,7 +77,6 @@
     src: url('../fonts/NimbusSanL-Italic.woff') format('woff');
 	font-weight: 700;
 	font-style: italic;
-	font-display: swap;
 }
 
 @font-face {
@@ -92,9 +84,13 @@
 	src: url('../fonts/InstrumentSerif.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
 }
-
+@font-face {
+	font-family: 'Imbue';
+	src: url('../fonts/ImbueLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
 
 
 :root {
@@ -236,6 +232,7 @@ nav {
     align-items: center;
     padding: 0 16px;
 	box-sizing: border-box;
+	z-index: 100;
 }
 
 nav ul{
@@ -480,7 +477,7 @@ article h3 {
 article p {
 	font-family: var(--font-serif);
 	font-weight: 300;
-	text-indent: 2.5rem;
+	text-wrap: hyphenate;
 }
 
 article .back-link {
@@ -495,16 +492,21 @@ series-heading h1 {
 	font-family: var(--font-serif-accent);
 	font-size: clamp(4rem, 3rem + 3vw, 5rem);
 	margin-top:0;
-	font-weight: 400;
+	font-weight: 300;
 	letter-spacing: -2px;
 }
+
+series-heading h2 {
+	margin-top: 0;
+	letter-spacing: -1px;
+}
+
 article series-heading bb-tags p {
 	font-family: var(--font-mono);
 	margin: 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: var(--fg-subtle);
-	text-indent: 0px;
 	text-align: center;
 }
 
@@ -518,7 +520,22 @@ article blockquote p{
 	font-family: var(--font-sans);
 	font-weight: 700;
 	margin: auto;
-	text-indent: 0px;
+}
+article p:has(img) {
+	width: 100%;
+	box-sizing: border-box;
+	align-self: center;
+}
+article img-caption {
+	display: block;
+	color: var(--fg-subtle);
+	text-align: center;
+	margin-top: -32px;
+}
+img-caption > p {
+	font-family: var(--font-sans);
+    font-weight: 400;
+	font-size: calc(var(--size-base) * 0.875);
 }
 @media screen and (min-width: 600px) {
 	article main{
