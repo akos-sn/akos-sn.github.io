@@ -219,7 +219,7 @@ footer svg {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
         grid-gap: 120px;
-        width: 100%;
+        max-width: 1200px;
     }
     .carousel .carousel-items {
         padding: 64px;
