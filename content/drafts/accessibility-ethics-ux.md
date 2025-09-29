@@ -3,9 +3,9 @@ title: Accessibility in the Ethics of UX
 date: 10 September 2025
 tags: Essay, Accessibility
 thumbnail: /assets/img/measuring-ux-thumbnail.png
-description: "On inclusivity and impact of choices."
+description: How our design decides who gets to fill in a role.
 ---
 
 # Accessibility in the Ethics of UX
 
-Story about a fired disabled person who was hired based on their skills, but the product made it impossible to do their job.
+How our design decides who gets to fill in a role.

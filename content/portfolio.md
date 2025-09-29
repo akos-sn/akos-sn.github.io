@@ -78,6 +78,33 @@ hr {
 #work {
     margin-bottom: 40px;
 }
+#other-work {
+    width:100%;
+    margin-bottom: 40px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.other-work-grid{
+      margin: 32px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-gap: 48px;
+      width: 100%;
+}
+.other-work-card{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.other-work-card > h3 {
+    font-size: 1.3rem;
+}
+.other-work-card > p {
+    font-size: 1.15rem;
+    margin: 0;
+}
 .work-card {
     border-radius: 20px;
     background: var(--bg-subtle);
@@ -176,7 +203,8 @@ footer svg {
     .work-grid {
         display: grid; 
         grid-template-columns: 1fr 1fr; 
-        grid-gap: 24px;
+        grid-gap: 8cqw;
+        margin: 0 8cqw;
     }
     .work-card {
         padding: 40px 40px;
@@ -185,6 +213,13 @@ footer svg {
         display: grid; 
         grid-template-columns: 1fr 1fr; 
         grid-gap: 48px;
+    }
+    .other-work-grid{
+        margin: 32px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 120px;
+        width: 100%;
     }
     .carousel .carousel-items {
         padding: 64px;
@@ -300,6 +335,7 @@ footer svg {
               </div>
         </section>
         <hr>
+        <!--
         <section id="core-values">
             <h2>Core values</h2>
             <div class="value-list">
@@ -317,6 +353,87 @@ footer svg {
                     <p>Continuous learning, experimentation drives innovation and growth.</p>
                 </div>
               </div>
+        </section>
+        <hr>-->
+        <section id="other-work">
+          <h2>Project history</h2>
+          <div class="other-work-grid">
+            <div class=other-work-card>
+              <h3>TOPdesk Asset Management</h3>
+              <p>2025</p>
+              <p>UX design of a largely complex legacy enterprise product module. Working on automation of inventory management and order delivery service design.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>TOPdesk Self-Service Portal</h3>
+              <p>2025</p>
+              <p>UX design and design engineering for the end-user facing help-desk platform of TOPdesk. I was working on our first end-user facing AI experience.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>TOPdesk Design System</h3>
+              <p>2023-2024</p>
+              <p>Creating components, writing guidelines, and maintaining a design system for scalability.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Alma+ App</h3>
+              <p>2023</p>
+              <p>iOS and Android application design for a pharmaceutical loyalty program. Created a multi-brand design system.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Lufthansa NetLine</h3>
+              <p>2023</p>
+              <p>Logo design project for Lufthansa's NetLine products.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>AERQ</h3>
+              <p>2023</p>
+              <p>A joint venture between LG Electronics and Lufthansa Technik. I was an external UX designer working on the maintenance/monitoring product for aircraft IFE systems.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>ELLE</h3>
+              <p>2023</p>
+              <p>Design for ELLE's Hungarian EDIDA award page for 2023 and the in-article quiz widget.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Neticle Media Intelligence</h3>
+              <p>2018-2022</p>
+              <p>A media monitoring tool by Neticle that uses semantic text analysis to help brands understand audiance voice and discover pain points from scattered sources. Created a multi-product design system.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Zurvey.io</h3>
+              <p>2018-2022</p>
+              <p>A CX survey software by Neticle that uses semantic text analysis to assist with understanding complex datasets of customer feedback.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Neticle Text Analysis API</h3>
+              <p>2018-2022</p>
+              <p>Neticle's toolkit for semantic text analysis supported by machine learning. UX and web design.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Budapest Museum of Applied Arts</h3>
+              <p>2017</p>
+              <p>Editorial design, freelance work.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>RendbeJössz Consultation Centre</h3>
+              <p>2017-2021</p>
+              <p>Psychological consultation centre, where I have done web development and UX. This was a project with my freelancing team, ZUG.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Oktafone</h3>
+              <p>2016</p>
+              <p>Browser-based educational platform, where I created UI designs for different widgets and the overall look-and-feel.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>WeAreKids</h3>
+              <p>2015</p>
+              <p>Web development, UI design, and app illustrations for an educational software used in kindergarten groups to teach kids English.</p>
+            </div>
+            <div class=other-work-card>
+              <h3>Crocobee</h3>
+              <p>2015</p>
+              <p>Digital agency and startup where I have done brand design, web design, web development, and animation.</p>
+            </div>
+          </div>
         </section>
         <hr>
         <section id="about">

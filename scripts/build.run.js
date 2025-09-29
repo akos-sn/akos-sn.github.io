@@ -224,13 +224,14 @@ async function build({ contentDir, outputDir, convertMdToHtml }) {
 			postsListHtml +=
 				'<li class="posts-list-item">' +
 				'<a href="' + post.slug + '"> <img src="' + post.thumbnail + '" /> </a>' +
-				'<div class="posts-metadata">' +
+				'<div class="posts-text-wrapper"><div class="posts-metadata">' +
 				'<div class="post-tags">' + post.tags + '</div>' +
 				'<span>' + '•' + '</span>' +
 				'<span class="post-date">' + post.date + '</span><br />' +
 				'</div>' +
 				'<a href="' + post.slug + '"><h3>' + post.title + '</h3></a>' +
 				'<p class="posts-description">' + post.description + '</p>' +
+				'</div>' +
 				'</li>\n';
 		}
 		postsListHtml += '</ul>';
