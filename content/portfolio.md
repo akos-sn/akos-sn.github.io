@@ -357,6 +357,7 @@ footer svg {
         <hr>-->
         <section id="other-work">
           <h2>Project history</h2>
+          <p>You can visit my graphic design work on <a href="https://www.behance.net/akosszasz">Behance</a>.</p>
           <div class="other-work-grid">
             <div class=other-work-card>
               <h3>TOPdesk Asset Management</h3>
