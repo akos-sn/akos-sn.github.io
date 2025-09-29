@@ -375,7 +375,7 @@ footer svg {
               <p>Creating components, writing guidelines, and maintaining a design system for scalability.</p>
             </div>
             <div class=other-work-card>
-              <h3>Alma+ App</h3>
+              <h3><a href="https://apps.apple.com/hu/app/alma/id6449091902">Alma+ App</a></h3>
               <p>2023</p>
               <p>iOS and Android application design for a pharmaceutical loyalty program. Created a multi-brand design system.</p>
             </div>
@@ -390,22 +390,22 @@ footer svg {
               <p>A joint venture between LG Electronics and Lufthansa Technik. I was an external UX designer working on the maintenance/monitoring product for aircraft IFE systems.</p>
             </div>
             <div class=other-work-card>
-              <h3>ELLE</h3>
+              <h3><a href="https://elle.hu">ELLE Hungary</a></h3>
               <p>2023</p>
               <p>Design for ELLE's Hungarian EDIDA award page for 2023 and the in-article quiz widget.</p>
             </div>
             <div class=other-work-card>
-              <h3>Neticle Media Intelligence</h3>
+              <h3><a href="https://neticle.com/mediaintelligence/en">Neticle Media Intelligence</a></h3>
               <p>2018-2022</p>
               <p>A media monitoring tool by Neticle that uses semantic text analysis to help brands understand audiance voice and discover pain points from scattered sources. Created a multi-product design system.</p>
             </div>
             <div class=other-work-card>
-              <h3>Zurvey.io</h3>
+              <h3><a href="https://zurvey.io/">Zurvey.io</a></h3>
               <p>2018-2022</p>
               <p>A CX survey software by Neticle that uses semantic text analysis to assist with understanding complex datasets of customer feedback.</p>
             </div>
             <div class=other-work-card>
-              <h3>Neticle Text Analysis API</h3>
+              <h3><a href="https://neticle.com/textanalysisapi/en/">Neticle Text Analysis API</a></h3>
               <p>2018-2022</p>
               <p>Neticle's toolkit for semantic text analysis supported by machine learning. UX and web design.</p>
             </div>
@@ -415,7 +415,7 @@ footer svg {
               <p>Editorial design, freelance work.</p>
             </div>
             <div class=other-work-card>
-              <h3>RendbeJössz Consultation Centre</h3>
+              <h3><a href="https://rendbejossz.hu/">RendbeJössz Consultation Centre</a></h3>
               <p>2017-2021</p>
               <p>Psychological consultation centre, where I have done web development and UX. This was a project with my freelancing team, ZUG.</p>
             </div>
@@ -430,7 +430,7 @@ footer svg {
               <p>Web development, UI design, and app illustrations for an educational software used in kindergarten groups to teach kids English.</p>
             </div>
             <div class=other-work-card>
-              <h3>Crocobee</h3>
+              <h3><a href="https://www.crocobee.com/">Crocobee</a></h3>
               <p>2015</p>
               <p>Digital agency and startup where I have done brand design, web design, web development, and animation.</p>
             </div>
